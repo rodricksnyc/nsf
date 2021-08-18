@@ -1,0 +1,138 @@
+.chart-container{
+    width: 94%;
+    margin-left: 3%;
+}
+.chart-container.orange{
+    background-image: unset;
+}
+.chart-container.stacked{
+    max-width: 600px;
+}
+
+.bar{
+    
+}
+
+.educators .bar{
+
+}
+
+g.x.axis path.domain{
+    stroke-width: 2px;
+    stroke-width: 5px;
+    color: #A2CD6A;
+}
+g.tick tspan{
+    font-size: 18px;
+    font-weight: 400;
+    color:#08609E;
+}
+.educators g.tick tspan{
+    color:#FFFFFF;
+}
+.stacked.green g.tick tspan,
+.stacked.orange g.tick tspan{
+    color: #FFFFFF;
+}
+
+.bar-label{
+    font-size: 16px;
+    font-weight: 600;
+    fill:#08609E;
+    pointer-events: none;
+}
+.educators .bar-label,
+.stacked.bar-label.first{
+    fill: #FFFFFF;
+}
+.stacked.bar-label{
+    fill: #042135;
+}
+
+
+.bar.top{
+    fill: #1082D1;
+}
+.bar.upper{
+    fill: #4FC7F3;
+}
+.bar.lower{
+    fill: #8EE1FF;
+}
+.bar.bottom{
+    fill: #B2EAFF;
+}
+.bar.nonstack{
+    fill: #C9E0E9;
+}
+
+.green.stacked .bar.top{
+    fill: #3F9715;
+}
+.green.stacked .bar.upper{
+    fill: #89D823;
+}
+.green.stacked .bar.lower{
+    fill: #ACE85D;
+}
+.green.stacked .bar.bottom{
+    fill: #C3F384;
+}
+
+.orange.stacked .bar.top{
+    fill: #C0561B;
+}
+.orange.stacked .bar.upper{
+    fill: #EB7834;
+}
+.orange.stacked .bar.lower{
+    fill: #FF8F28;
+}
+.orange.stacked .bar.bottom{
+    fill: #FFB82E;
+}
+
+.barchart-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #08609E;
+}
+.barchart-title.educator{
+    color: #fff;
+}
+
+.table.top thead th {
+    border-top: none;
+    border-bottom: 3px solid #A2CD6A;
+}
+
+.total-row td{
+    font-weight: 500;
+}
+
+
+#chart-container-0{
+    width: 600px;
+}
+
+#chart-container-01{
+    width: 600px;
+}
+
+g.axis {
+    font-family: 'Red Hat Text';
+}
+
+.no-data-text{
+    text-anchor: middle;
+    font-size: 18px;
+    font-weight: 500;
+}
+.green.stacked .no-data-text,
+.orange.stacked .no-data-text{
+    fill: #fff;
+}
+
+.chart-container.educators .no-data-text{
+    fill: #fff;
+}

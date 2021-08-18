@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 190.9 190.9" enable-background="new 0 0 190.9 190.9" xml:space="preserve">
+<g id="Layer_1">
+</g>
+<g id="Great">
+</g>
+<g id="Good">
+</g>
+<g id="Average">
+</g>
+<g id="Poor">
+	<linearGradient id="orange-circle_1_" gradientUnits="userSpaceOnUse" x1="27.958" y1="162.9511" x2="162.9511" y2="27.958">
+		<stop  offset="0" style="stop-color:#FF9327"/>
+		<stop  offset="0.7146" style="stop-color:#FCAB2C"/>
+		<stop  offset="1" style="stop-color:#FBB62F"/>
+	</linearGradient>
+	<circle id="orange-circle" fill="url(#orange-circle_1_)" cx="95.5" cy="95.5" r="95.5"/>
+	<path id="sad-mouuth" fill="#8E4604" d="M133.7,150.7c-1.5,0-3-0.9-3.6-2.3c-0.4-0.9-10.1-21-35.4-21c-23.6,0-33.3,20.2-33.7,21
+		c-0.9,2-3.3,2.9-5.3,1.9c-2-0.9-2.9-3.3-2-5.3c0.5-1,12.1-25.7,41-25.7c30.6,0,42.2,24.6,42.7,25.7c0.9,2,0,4.4-2,5.3
+		C134.8,150.6,134.2,150.7,133.7,150.7z"/>
+	<ellipse id="left-eye_1_" fill="#8E4604" cx="57.3" cy="79.6" rx="10.7" ry="12.1"/>
+	<ellipse id="right-eye_1_" fill="#8E4604" cx="133.7" cy="79.6" rx="10.7" ry="12.1"/>
+</g>
+<g id="VeryPoor">
+</g>
+</svg>

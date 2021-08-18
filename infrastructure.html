@@ -1,0 +1,2256 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta content-type="text/plain" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link type="image/png" href="images/logo.png" rel="icon">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/charts.css">
+	<link rel="stylesheet" href="css/tip.css">
+
+    <script src="vendorlibs/d3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="vendorlibs/d3-v6-tip.js"></script>
+
+	<script id="drop-filter-template" type="text/x-handlebars-template">
+		{{#each this}}
+		<option value="{{this}}">{{this}}</option>
+		{{/each}}
+	</script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<a href="#themaincontent" id="skiptocontent" tabindex="0" aria-hidden="false">skip to main content</a>
+	<h1 class="sr-only">NSF INCLUDES National Network</h1>
+
+	<div class="container-fluid overflow-hidden position-relative">
+
+		<section class="top-search-container" data-attached="globalSearch" data-type="input">
+			<div class="top-search-input-wrapper">
+
+				<form id="tipue_search" action="search.html">
+					<div class="input-group">
+						<input type="text" name="q" id="tipue_search_input" autocomplete="off" type="text" aria-label="Global Search" tabindex="-1" placeholder="Search for keywords, etc..." value="" required class="form-control">
+
+						<div class="input-group-append">
+							<button class="hide-btn tipue_button search" tabindex="-1" role="button" id="search">
+								<i class="far fa-search blue"></i>
+							</button>
+						</div>
+					</div>
+
+					<label for="per_page" style="display:none">Results per page:</label>
+					<select name="per_page" id="tipue_per_page" style="display:none">
+						<option value="7" selected="selected">7</option>
+						<option value="20">20</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+
+				</form>
+
+			</div>
+			<span tabindex="-1" role="button" class="closeTopSearch">
+				<i class="fal fa-times blue"></i>
+			</span>
+		</section>
+
+		<!-- <img class="imgBottomLeft img-fluid" src="images/orange.svg" alt=""> -->
+
+		<header id="Home">
+			<nav class="navbar navbar-expand-md twenty">
+				<div class="container-fluid position-relative wrap">
+					<a href="https://www.includesnetwork.org/home" target="_blank" class="mneg5">
+						<img src="images/back-arrow.svg" class="img-fluid" alt="Go to Includes Network Homepage">
+						<span class="show767"><p class="blue"><i class="far fa-arrow-left"></i> National Network</p></span>
+					</a>
+
+					<a class="pb-0 ml-2" href="index.html">
+						<img src="images/Includes-logo.png" class="img-fluid logo" alt="NSF INCLUDES National Network Logo">
+					</a>
+
+
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="participation.html" id="drop1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Program Participation
+								</a>
+								<div class="dropdown-menu" aria-labelledby="drop1">
+									<a class="dropdown-item" href="participation.html#tabs-1">Projects</a>
+									<a class="dropdown-item" href="participation.html#tabs-2">Students & Educators</a>
+
+									<a class="dropdown-item" href="participation.html#tabs-3">Partners</a>
+									<a class="dropdown-item" href="participation.html#tabs-4">STEM BP Resources</a>
+								</div>
+							</li>
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="infrastructure.html" id="drop2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Collaborative Infrastructure
+								</a>
+								<div class="dropdown-menu" aria-labelledby="drop2">
+									<a class="dropdown-item openTab5" href="infrastructure.html#vision">Shared Vision</a>
+									<a class="dropdown-item openTab6" href="infrastructure.html#network">Partnerships</a>
+
+									<a class="dropdown-item openTab7" href="infrastructure.html#goals">Goals & Metrics</a>
+									<a class="dropdown-item openTab8" href="infrastructure.html#leadership">Leadership & Communication</a>
+									<a class="dropdown-item openTab9" href="infrastructure.html#expansion">Expansion, Sustainability & Scale</a>
+								</div>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="stem.html" id="drop3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									STEM BP Outcomes
+								</a>
+								<div class="dropdown-menu last" aria-labelledby="drop3">
+									<a class="dropdown-item" href="stem.html#tabs-1">Preparation for STEM Education</a>
+									<a class="dropdown-item" href="stem.html#tabs-2">Student Interest, Identity, & Confidence in STEM</a>
+
+									<a class="dropdown-item" href="stem.html#tabs-3">Academic Outcomes</a>
+									<a class="dropdown-item" href="stem.html#tabs-4">Workforce Representation</a>
+
+								</div>
+							</li>
+
+
+						</ul>
+
+					</div>
+
+					<div class="position-relative d-flex align-items-center">
+
+						<button class="navbar-toggler collapsed mr-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><i class="fal fa-times"></i></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<a class="search blue" tabindex="0"><i class="far fa-search"></i></a>
+
+					</div>
+
+				</div>
+			</nav>
+		</header>
+
+		<div id="slideOut2">
+			<div class="slideOutTab">
+				<div id="one" class="openTab bottomShadow" role="button" tabindex="0" aria-label="Contact">
+
+					<p class="black"><i class="fal fa-file-chart-line"></i> <span class="noMobile">Request to Submit Project Data</span></p>
+
+
+				</div>
+				<div id="two" class="openTab bottomShadow" data-dismiss="modal" aria-controls="right-nav-contact" aria-selected="false" tabindex="0">
+
+					<p class="black"><i aria-hidden="true" class="fal fa-envelope"></i> <span class="noMobile">Contact Us</span></p>
+				</div>
+			</div>
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="closeThisPlease" id="close">
+						<p class="blackLarger text-center changeTitle"><b>Rate your Experience</b></p>
+						<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+							&#10005;
+						</button>
+					</div>
+
+				</div>
+				<div class="modal-body">
+
+					<div class="secondBlock">
+						<div class="hideOnSubmit">
+						<p>If you are interested in submitting data about your project, please complete this initial request and a member of the Coordination Hub will contact you to coordinate next steps.</p>
+						<p class="strong">Note that a request to provide data about your project may be submitted at any time throughout the year.</p>
+					</div>
+
+						<form role="form" type="post" id="theform2">
+
+							<div class="form-group">
+								<label for="formControl11">Name</label>
+								<input id="formControl11" type="text" class="form-control required" tabindex="0" aria-hidden="false" name="name" data-form-field="Name" required>
+							</div>
+							<div class="form-group">
+								<label for="formControl12">Email</label>
+								<input type="email" id="formControl12" class="form-control required" tabindex="0" aria-hidden="false" name="email" data-form-field="Email" required>
+							</div>
+
+							<div class="form-group">
+								<label for="formControl13">Phone (optional)</label>
+								<input type="text" id="formControl13" class="form-control" tabindex="0" aria-hidden="false" name="phone" data-form-field="Phone">
+							</div>
+
+							<div class="form-group">
+								<label for="formControl14">Program Name</label>
+								<input type="text" id="formControl14" class="form-control" tabindex="0" aria-hidden="false" name="Program Name" data-form-field="Program Name">
+							</div>
+
+							<div class="form-group">
+								<label for="formControl15">Project Name</label>
+								<input type="text" id="formControl15" class="form-control" tabindex="0" aria-hidden="false" name="Project Name" data-form-field="Project Name">
+							</div>
+
+							<p>What data are you interested in submitting? (select all that apply)</p>
+
+							<div class="form-group">
+								<fieldset>
+									<div class="one">
+										<input class="form-check-input" type="checkbox" value="Participant Data" id="participantData" name="Interest 1">
+										<label class="" for="participantData">
+											Participant Data
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="Partner Data" id="partnerData" name="Interest 2">
+										<label class="" for="partnerData">
+											Partner Data
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="STEM BP Resources" id="stemBPResources" name="Interest 3">
+										<label class="" for="stemBPResources">
+											STEM BP Resources
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="STEM BP Outcomes" id="stemBPOutcomes" name="Interest 4">
+										<label class="" for="stemBPOutcomes">
+											STEM BP Outcomes
+										</label>
+									</div>
+
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="Collaborative Infrastructure" id="collaborativeInfrastructure" name="Interest 5">
+										<label class="" for="collaborativeInfrastructure">
+											Collaborative Infrastructure
+										</label>
+									</div>
+
+
+								</fieldset>
+
+							</div>
+
+							<p class="small mt-3">Please select the button below to submit your request.  You will receive a response from a member of the Coordination Hub soon.</p>
+
+
+							<button type="submit" class="btn btn-info button-outlined mt-3 sendMessage" tabindex="0" aria-hidden="false">
+								<i class="fal fa-envelope brightBlue"></i>&nbsp;Submit
+								<div class="buttonOverlay"></div>
+							</button>
+
+
+						</form>
+
+						<div class="success_message2" style="display:flex;justify-content:center;display:none;overflow:none">
+							<h6 class="text-center">Your message was sent successfully!</h6>
+						</div>
+						<div class="error_message2" style="display:flex;justify-content: center;display:none;overflow:none">
+							<h5 class="text-center">Sorry there was an error sending your form.</h5>
+						</div>
+
+					</div>
+
+					<div class="row firstBlock hide1">
+						<div class="col-xs-12 col-lg-12">
+
+
+							<form role="form" type="post" id="theform">
+
+								<div class="form-group">
+									<label for="formControl1">Name</label>
+									<input id="formControl1" type="text" class="form-control required" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+								</div>
+								<div class="form-group">
+									<label for="formControl2">Email</label>
+									<input type="email" id="formControl2" class="form-control required" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+								</div>
+
+								<div class="form-group">
+									<label for="formControl3">Phone (optional)</label>
+									<input type="text" id="formControl3" class="form-control" tabindex="-1" aria-hidden="false" name="phone" data-form-field="Phone">
+								</div>
+
+
+								<div class="form-group">
+									<fieldset>
+										<label for="general-inquiry">Reason</label>
+										<div class="d-flex justify-content-around align-items-center flex-wrap mt-3">
+
+											<div class="form-check oneQuestion">
+												<i class="fal fa-info-circle"></i>
+												<input id="answer1" type="radio" name="reason" value="general" class="form-check-input" checked>
+												<label class="rainbow form-check-label" for="answer1"><p class="oneBlack">General</p></label>
+											</div>
+											<div class="form-check oneQuestion">
+												<i class="fal fa-question-circle"></i>
+												<input id="answer2" type="radio" name="reason" value="question" class="form-check-input">
+												<label class="rainbow form-check-label" for="answer2"><p class="oneBlack">Question</p></label>
+
+											</div>
+
+											<div class="form-check oneQuestion">
+												<i class="far fa-wrench"></i>
+												<input id="answer3" type="radio" name="reason" value="help" class="form-check-input">
+												<label class="rainbow form-check-label" for="answer3"><p class="oneBlack">Tech Help</p></label>
+											</div>
+
+
+										</div>
+
+									</fieldset>
+								</div>
+
+
+								<textarea name="message" tabindex="0" aria-hidden="false" rows="7" data-form-field="Message" class="textArea2"></textarea>
+
+								<button type="submit" class="btn btn-info button-outlined mt-3 sendMessage2" tabindex="0" aria-hidden="false">
+									<i class="fal fa-envelope brightBlue"></i>&nbsp;Submit
+									<div class="buttonOverlay"></div>
+								</button>
+
+							</form>
+
+							<div class="success_message" style="display:flex;justify-content:center;display:none;overflow:none">
+								<h6 class="text-center">Your message was sent successfully!</h6>
+							</div>
+							<div class="error_message" style="display:flex;justify-content: center;display:none;overflow:none">
+								<h5 class="text-center">Sorry there was an error sending your form.</h5>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="contactUsOverlay"></div>
+
+		<section class="block0">
+			<div class="topSection heros" id="overview">
+
+
+				<div class="container-fluid" id="themaincontent">
+
+					<a href="index.html"><img src="images/Includes-logo.png" class="img-fluid logo pl-4 pr-4 pt-3 mobileOnly" alt="NSF INCLUDES National Network Logo"></a>
+
+					<div class="d-flex justify-content-center align-items-center">
+						<img src="images/People.svg" class="img-responsive" alt="">
+						<h2 class="text-center mb-0"><b>Progress Addressing the Design Elements</b></h2>
+
+					</div>
+
+				</div>
+
+				<div class="container">
+
+					<p>A hallmark of NSF INCLUDES is the use of the five design elements of collaborative infrastructure, a process by which partner organizations (1) engage their community to formulate a shared vision of what can be accomplished collaboratively; (2) provide a platform for collaborative action; (3) develop common goals, objectives, metrics, and data collection procedures to measure shared progress and inform decision making; (4) develop structures across partner organizations to enhance coordination, communication, and visibility; and (5) establish the capacity for the expansion, sustainability, and scaling of their shared efforts. Each NSF INCLUDES project uses this framework to accelerate its efforts to address systemic barriers to diversity, equity, and inclusion in STEM. <span class="blue strong highlight" data-toggle="modal" data-target="#survey"> Learn about the Hub’s Collaborative Infrastructure Survey <i class="far fa-window-restore"></i></span>
+					</p>
+				</div>
+				<div class="container-fluid mt-5">
+
+					<div id="nav5" class="largePadding">
+						<ul class="nav nav-tabs position-relative" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active text-center" data-type="vision" data-toggle="tab" href="#vision" role="tab"><i class="fal fa-lightbulb-on"></i><span class="hide767"><br>Shared Vision</span></a>
+
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" data-type="network" data-toggle="tab" href="#network" role="tab"><i class="fal fa-hands-helping"></i><span class="hide767"><br>Partnerships</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" data-type="goals" data-toggle="tab" href="#goals" role="tab"><i class="fal fa-chart-line"></i><span class="hide767"><br>Goals & Metrics</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" data-type="leadership" data-toggle="tab" href="#leadership" role="tab"><i class="fal fa-comments"></i><span class="hide767"><br>Leadership & Communication</span></a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-center" data-type="expansion" data-toggle="tab" href="#expansion" role="tab"><i class="fal fa-project-diagram"></i><span class="hide767"><br>Expansion, Sustainability, & Scale</span></a>
+							</li>
+
+
+						</ul>
+
+					</div>
+
+					<div class="tab-content infrastructure">
+						<div class="tab-pane active" id="vision" role="tabpanel">
+							<div class="largerPadding">
+
+								<p class="lighter mobileOnly text-center">Shared Vision</p>
+								<p>NSF INCLUDES projects identify a common agenda that reflects a collective understanding of the BP challenge and links to existing research, promising practices, and/or to the previous and ongoing activities of partnering organizations. Large scale networks and partnerships develop a strategic plan to address the BP challenges, including technical infrastructure, which facilitates the implementation of a set of specified activities to achieve targeted outcomes. (Source: NSF Program Solicitation 19-600.)</p>
+								<p>The graphics below portray survey findings for Shared Vision using respondents as the unit of analysis. <span class="blue strong highlight" data-toggle="modal" data-target="#sharedVision">View <i class="far fa-window-restore"></i></span> the project-level composite scores for survey items pertaining to Shared Vision.</p>
+
+								<div class="lightBlue pt-2 mt-4 mb-5">
+									<section class="block666">
+										<div class="d-flex align-items-center justify-content-start heros">
+											<i class="far fa-filter"></i>
+
+
+											<!-- <div class="form-group">
+
+												<label for="programType1" class="form-check-label mr-3">PROGRAM TYPE</label>
+												<select aria-required="true" class="form-control" id="programType1" size="1">
+													<option value="">All</option>
+													<option value="1">IHE Faculty</option>
+													<option value="2">IHE faculty and administrators at associate colleges</option>
+													<option value="3">IHE faculty, postdocs, graduate students, and administrators at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="4">K–20 educators</option>
+													<option value="5">K–12 teachers and administrators</option>
+													<option value="6">Other non K–12/IHE professionals</option>
+
+												</select>
+											</div> -->
+
+											<div class="form-group">
+
+												<label for="orgType1">Organization Type</label>
+												<select aria-required="true" class="form-control stacked-filter-select" id="orgType1" size="1">
+													<option value="all">All</option>
+													<option value="Lead Organization">Lead Organization</option>
+													<option value="Evaluation organization">Evaluation organization</option>
+													<option value="Partner organization">Partner organization</option>
+													<option value="Respondent participates as an individual and does not belong to an organization affiliated with the project">Respondent participates as an individual and does not belong to an organization affiliated with the project</option>
+													<option value="Backbone organization">Backbone organization</option>
+												</select>
+
+
+											</div>
+
+											<!-- <div class="form-group">
+
+												<label for="resType1">Respondent Type</label>
+												<select aria-required="true" class="form-control" id="resType1" size="1">
+													<option value="">All</option>
+													<option value="1">Elementary school students</option>
+													<option value="2">Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="3">High school students</option>
+													<option value="4">K-20 students (cannot distinguish K-20 levels)</option>
+													<option value="5">Middle school students</option>
+													<option value="6">Other K-12 students (cannot distinguish K-12 levels)</option>
+													<option value="7">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="8">Students at associate colleges</option>
+													<option value="9">Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+
+												</select>
+											</div> -->
+
+										</div>
+
+									</section>
+
+								</div>
+
+								<div class="row">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project has a plan that addresses systemic barriers to broadening participation in STEM</p>
+											<p class="blue small">Nearly three-fourths (72%) of respondents indicated that their project had developed (or had made significant progress in developing) a plan for addressing systemic barriers to broadening participation in STEM. Respondents from Alliances with 2 years of funding were more likely to report significant progress or achievement in this area (76%, compared with 68% for those from projects with 3 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+
+										<!-- justin's chart goes here -->
+										<div id="Q2_A_2" class="chart-container stacked blue" chart-type="stacked2"></div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<section class="block500 pt-3">
+
+								<div class="largerPadding">
+
+									<div class="row">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+
+											<!-- justin's chart goes here -->
+											<div id="Q3_A_1" class="chart-container stacked green" chart-type="stacked1"></div>
+
+
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">Our project’s goals are informed by an assessment of the participant population’s needs</p>
+												<p class="white small">Nearly all (92%) respondents indicated that their project’s goals had been informed by an assessment of the needs of their participant population. Respondents from Alliances with 3 years of funding were more likely to somewhat or strongly agree with this statement (95%, compared with 89% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<hr class="gray"></hr>
+
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">All of our core partners are involved in the process of developing our project’s goals</p>
+												<p class="white small">Nearly all (94%) respondents somewhat or strongly agreed that all of their <em>core</em> partners were involved in the process of developing their project’s goals. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (60%, compared with 49% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+
+											<!-- justin's chart goes here -->
+											<div id="Q4_A_1" class="chart-container stacked green" chart-type="stacked1"></div>
+
+
+										</div>
+									</div>
+								</div>
+
+
+							</section>
+
+
+						</div>
+
+
+						<div class="tab-pane" id="network" role="tabpanel">
+
+							<div class="largerPadding">
+
+								<p class="lighter mobileOnly text-center">Partnerships</p>
+								<p>NSF INCLUDES projects consist of a set of primary organizations and additional partners that come together locally, regionally, nationally, by disciplinary focus, or by other multisector categories. Partners are supported by an independent “backbone” or support organization to help coordinate and facilitate the collaboration. (Source: NSF Program Solicitation 19-600.)</p>
+								<p>The graphics below portray survey findings for Partnerships using respondents as the unit of analysis. <span class="blue strong highlight" data-toggle="modal" data-target="#partnerships">View <i class="far fa-window-restore"></i></span> project-level composite scores for survey items pertaining to Partnerships.</p>
+
+								<div class="lightBlue pt-2 mt-4 mb-5">
+									<section class="block666">
+										<div class="d-flex align-items-center justify-content-start heros">
+											<i class="far fa-filter"></i>
+
+
+											<!-- <div class="form-group">
+
+												<label for="programType2" class="form-check-label mr-3">PROGRAM TYPE</label>
+												<select aria-required="true" class="form-control" id="programType2" size="1">
+													<option value="">All</option>
+													<option value="1">IHE Faculty</option>
+													<option value="2">IHE faculty and administrators at associate colleges</option>
+													<option value="3">IHE faculty, postdocs, graduate students, and administrators at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="4">K–20 educators</option>
+													<option value="5">K–12 teachers and administrators</option>
+													<option value="6">Other non K–12/IHE professionals</option>
+
+												</select>
+											</div> -->
+
+											<div class="form-group">
+
+												<label for="orgType2">Organization Type</label>
+												<select aria-required="true" class="form-control stacked-filter-select" id="orgType2" size="1">
+													<option value="all">All</option>
+													<option value="Lead Organization">Lead Organization</option>
+													<option value="Evaluation organization">Evaluation organization</option>
+													<option value="Partner organization">Partner organization</option>
+													<option value="Respondent participates as an individual and does not belong to an organization affiliated with the project">Respondent participates as an individual and does not belong to an organization affiliated with the project</option>
+													<option value="Backbone organization">Backbone organization</option>
+												</select>
+
+
+											</div>
+
+											<!-- <div class="form-group">
+
+												<label for="resType2">Respondent Type</label>
+												<select aria-required="true" class="form-control" id="resType2" size="1">
+													<option value="">All</option>
+													<option value="1">Elementary school students</option>
+													<option value="2">Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="3">High school students</option>
+													<option value="4">K-20 students (cannot distinguish K-20 levels)</option>
+													<option value="5">Middle school students</option>
+													<option value="6">Other K-12 students (cannot distinguish K-12 levels)</option>
+													<option value="7">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="8">Students at associate colleges</option>
+													<option value="9">Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+
+												</select>
+											</div> -->
+
+										</div>
+									</section>
+
+								</div>
+
+								<div class="row">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project has a plan that clearly specifies each partner’s role</p>
+											<p class="blue small">More than four-fifths (81%) of respondents indicated that their project had developed (or had made significant progress in developing) a plan that clearly specified each partner’s role. There was no meaningful difference by year of funding.</p>
+
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q2_A_1" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+								</div>
+
+								<hr class="gray"></hr>
+
+
+								<div class="row mt-5">
+
+									<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+										<div id="Q2_A_3" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+									<div class="col-lg-5 col-md-12 order-1">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium backwards">Our project adds new partners to address a given need (e.g., to access crucial expertise and/or additional participants)</p>
+											<p class="blue small">Nearly three-fifths (59%) of respondents indicated that their project had added (or had made significant plans to add) new partners to address a given need. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (65%, compared with 55% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</div>
+
+
+							<section class="block500 pt-3">
+
+								<div class="largerPadding">
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">The sum of our core and supporting partners represent the range of institutions needed to achieve our project’s goals</p>
+												<p class="white small">Most (85%) respondents somewhat or strongly agreed that the sum of their core and supporting partners represented the range of institutions needed to achieve the goals of their project. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (53%, compared with 43% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q4_A_5" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q4_A_6" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">The sum of our core and supporting partners reflect the diversity of our participant population</p>
+												<p class="white small">Nearly three-fourths (71%) of respondents somewhat or strongly agreed that the sum of their core and supporting partners reflected the diversity of their participant population. There was no meaningful difference by year of funding.</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</section>
+
+							<section class="block10 pt-3">
+
+								<div class="largerPadding">
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber2 medium">My organization has clear goals for its contribution on the project</p>
+												<p class="white small">More than four-fifths (84%) of respondents somewhat or strongly agreed that their organization had clear goals for its contribution to the project. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (77%, compared with 17% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes three">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q5_A_1" class="chart-container stacked orange" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q5_A_2" class="chart-container stacked orange" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber2 medium backwards">My organization is committed to implementing the project’s approach</p>
+												<p class="small white">Nearly all (95%) respondents somewhat or strongly agreed that their organization was committed to implementing their project’s approach. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (85%, compared with 33% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes three">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+										<hr class="gray"></hr>
+
+
+										<div class="row mt-5">
+											<div class="col-lg-5 col-md-12">
+												<div class="d-flex flex-column">
+													<p class="whiteNumber2 medium">My organization changes its activities to better align with the project’s approach</p>
+													<p class="white small">Most (89%) respondents somewhat or strongly agreed that their organization had changed its activities to better align with the project’s approach. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (58%, compared with 44% for those from projects with 2 years of funding).</p>
+
+													<ul class="codes three">
+														<li><span></span>Strongly agree</li>
+														<li><span></span>Somewhat agree</li>
+														<li><span></span>Somewhat disagree</li>
+														<li><span></span>Strongly disagree</li>
+
+
+													</ul>
+
+
+												</div>
+
+											</div>
+											<div class="col-lg-7 col-md-12">
+												<div id="Q5_A_3" class="chart-container stacked orange" chart-type="stacked1"></div>
+											</div>
+										</div>
+
+
+								</div>
+
+							</section>
+
+
+						</div>
+
+
+						<div class="tab-pane" id="goals" role="tabpanel">
+
+							<div class="largerPadding">
+
+								<p class="lighter mobileOnly text-center">Goals & Metrics</p>
+								<p>NSF INCLUDES projects have well-defined, relevant goals and measurable objectives and outcomes, including progress indicators; they outline the role the “backbone” or support organization plays in collecting and coordinating data on outcomes from the proposed partner institutions. This statement of goals and measurable objectives includes describing the types of data that might be collected and how data will be used. Projects have an evaluation plan that use benchmarks, indicators, logic models, road maps, or other evaluative methods to document progress toward goals, objectives, and outcomes. (Source: NSF Program Solicitation 19-600.)</p>
+								<p>The graphics below portray survey findings for Goals & Metrics using respondents as the unit of analysis. <span class="blue strong highlight" data-toggle="modal" data-target="#goalStats">View <i class="far fa-window-restore"></i></span> project-level composite scores for survey items pertaining to Goals & Metrics.</p>
+
+								<div class="lightBlue pt-2 mt-4 mb-5">
+									<section class="block666">
+										<div class="d-flex align-items-center justify-content-start heros">
+											<i class="far fa-filter"></i>
+
+
+											<!-- <div class="form-group">
+
+												<label for="programType3" class="form-check-label mr-3">PROGRAM TYPE</label>
+												<select aria-required="true" class="form-control" id="programType3" size="1">
+													<option value="">All</option>
+													<option value="1">IHE Faculty</option>
+													<option value="2">IHE faculty and administrators at associate colleges</option>
+													<option value="3">IHE faculty, postdocs, graduate students, and administrators at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="4">K–20 educators</option>
+													<option value="5">K–12 teachers and administrators</option>
+													<option value="6">Other non K–12/IHE professionals</option>
+
+												</select>
+											</div> -->
+
+											<div class="form-group">
+
+												<label for="orgType3">Organization Type</label>
+												<select aria-required="true" class="form-control stacked-filter-select" id="orgType3" size="1">
+													<option value="all">All</option>
+													<option value="Lead Organization">Lead Organization</option>
+													<option value="Evaluation organization">Evaluation organization</option>
+													<option value="Partner organization">Partner organization</option>
+													<option value="Respondent participates as an individual and does not belong to an organization affiliated with the project">Respondent participates as an individual and does not belong to an organization affiliated with the project</option>
+													<option value="Backbone organization">Backbone organization</option>
+												</select>
+
+
+											</div>
+
+											<!-- <div class="form-group">
+
+												<label for="resType3">Respondent Type</label>
+												<select aria-required="true" class="form-control" id="resType3" size="1">
+													<option value="">All</option>
+													<option value="1">Elementary school students</option>
+													<option value="2">Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="3">High school students</option>
+													<option value="4">K-20 students (cannot distinguish K-20 levels)</option>
+													<option value="5">Middle school students</option>
+													<option value="6">Other K-12 students (cannot distinguish K-12 levels)</option>
+													<option value="7">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="8">Students at associate colleges</option>
+													<option value="9">Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+
+												</select>
+											</div> -->
+
+										</div>
+
+									</section>
+
+								</div>
+
+								<div class="row">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project has participatory processes to refine its measures, indicators, metrics, and/or data collection methods</p>
+											<p class="blue small">More than three-fourths (77%) of respondents indicated that their project had (or have made significant progress toward developing) a participatory process to refine its measures, indicators, metrics, and/or data collection methods. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (84%, compared with 70% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q2_A_4" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+								</div>
+
+								<hr class="gray"></hr>
+
+
+								<div class="row mt-5">
+
+									<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+										<div id="Q2_A_5" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+									<div class="col-lg-5 col-md-12 order-1">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium backwards">Our project has the capacity to track progress across all partners (e.g., protocols, common metrics)</p>
+											<p class="blue small">More than three-fifths (62%) of respondents indicated that their project had (or had made significant progress toward developing) the capacity to track progress across all partners. Respondents from Alliances with 3 years of funding were marginally more likely to report significant progress or achievement in this area (64%, compared with 60% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+													<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<hr class="gray"></hr>
+
+								<div class="row mt-5">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project uses data to make regular improvements</p>
+											<p class="blue small">More than three-fifths (61%) of respondents indicated that their project had achieved (or had made significant progress toward) using data to make regular improvements. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (24%, compared with 20% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+													<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q2_A_6" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+								</div>
+							</div>
+
+
+							<section class="block500">
+
+								<div class="largerPadding">
+									<div class="row mt-5 pt-3">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">All of our core partners are involved in the process of making sense of findings that emerge from the project’s analysis of shared measurement data</p>
+												<p class="white small">Most (89%) respondents somewhat or strongly agreed that all of their core partners were involved in the process of making sense of findings that emerged from their project’s analysis of their shared measurement data. Respondents from Alliances with 3 years of funding were slightly more likely to strongly agree with this statement (41%, compared with 33% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q4_A_2" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q5_A_4" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">My organization is involved in the process of making sense of data collected by the project</p>
+												<p class="white small">Nearly three-fourths (74%) of respondents somewhat or strongly agreed that their organization was involved in the process of making sense of data collected by the Alliance. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (54%, compared with 17% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</section>
+
+
+
+
+						</div>
+
+
+						<div class="tab-pane" id="leadership" role="tabpanel">
+
+							<div class="largerPadding">
+
+								<p class="lighter mobileOnly text-center">Leadership & Communication</p>
+								<p>Projects include internal and external communication plans and explain how they develop leadership capacity within and among all partnering organizations. They describe their strategy to engage participating organizations in change management. (Source: NSF Program Solicitation 19-600.)</p>
+								<p>The graphics below portray survey findings for Leadership & Communication using respondents as the unit of analysis. <span class="blue strong highlight" data-toggle="modal" data-target="#leadershipData">View <i class="far fa-window-restore"></i></span> project-level composite scores for survey items pertaining to Leadership & Communication.</p>
+
+								<div class="lightBlue pt-2 mt-4 mb-5">
+									<section class="block666">
+										<div class="d-flex align-items-center justify-content-start heros">
+											<i class="far fa-filter"></i>
+
+
+											<!-- <div class="form-group">
+
+												<label for="programType4" class="form-check-label mr-3">PROGRAM TYPE</label>
+												<select aria-required="true" class="form-control" id="programType4" size="1">
+													<option value="">All</option>
+													<option value="1">IHE Faculty</option>
+													<option value="2">IHE faculty and administrators at associate colleges</option>
+													<option value="3">IHE faculty, postdocs, graduate students, and administrators at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="4">K–20 educators</option>
+													<option value="5">K–12 teachers and administrators</option>
+													<option value="6">Other non K–12/IHE professionals</option>
+
+												</select>
+											</div> -->
+
+											<div class="form-group">
+
+												<label for="orgType4">Organization Type</label>
+												<select aria-required="true" class="form-control stacked-filter-select" id="orgType4" size="1">
+													<option value="all">All</option>
+													<option value="Lead Organization">Lead Organization</option>
+													<option value="Evaluation organization">Evaluation organization</option>
+													<option value="Partner organization">Partner organization</option>
+													<option value="Respondent participates as an individual and does not belong to an organization affiliated with the project">Respondent participates as an individual and does not belong to an organization affiliated with the project</option>
+													<option value="Backbone organization">Backbone organization</option>
+												</select>
+
+
+											</div>
+
+											<!-- <div class="form-group">
+
+												<label for="resType4">Respondent Type</label>
+												<select aria-required="true" class="form-control" id="resType4" size="1">
+													<option value="">All</option>
+													<option value="1">Elementary school students</option>
+													<option value="2">Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="3">High school students</option>
+													<option value="4">K-20 students (cannot distinguish K-20 levels)</option>
+													<option value="5">Middle school students</option>
+													<option value="6">Other K-12 students (cannot distinguish K-12 levels)</option>
+													<option value="7">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="8">Students at associate colleges</option>
+													<option value="9">Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+
+												</select>
+											</div> -->
+
+										</div>
+									</section>
+
+								</div>
+
+
+
+								<div class="row">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project’s leadership structure leverages the collective knowledge of partners and other stakeholders</p>
+											<p class="blue small">Nearly all (93%) respondents somewhat or strongly agreed that their project’s leadership structure leveraged the collective knowledge of partners and other stakeholders. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (76%, compared with 63% for those from projects with 3 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>Strongly agree</li>
+												<li><span></span>Somewhat agree</li>
+												<li><span></span>Somewhat disagree</li>
+												<li><span></span>Strongly disagree</li>
+
+											</ul>
+
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q3_A_2" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+								</div>
+
+								<hr class="gray"></hr>
+
+
+								<div class="row mt-5">
+
+									<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+										<div id="Q3_A_3" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+									<div class="col-lg-5 col-md-12 order-1">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium backwards">Our project leadership has structures in place to encourage full participation by all partners</p>
+											<p class="blue small">Nearly all (95%) respondents somewhat or strongly agreed that their project’s leadership had structures in place to encourage full participation by all partners. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (64%, compared with 43% for those from projects with 3 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>Strongly agree</li>
+												<li><span></span>Somewhat agree</li>
+												<li><span></span>Somewhat disagree</li>
+												<li><span></span>Strongly disagree</li>
+
+											</ul>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+								<section class="block500 pt-3">
+
+								 <div class="largerPadding">
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">Our project has internal procedures that minimize power imbalances among partners</p>
+												<p class="white small">Nearly all (92%) respondents somewhat or strongly agreed that their project had internal procedures in place that minimize power imbalances among partners. Respondents from Alliances with 2 years of funding were more likely to somewhat or strongly agree with this statement (98%, compared with 86% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q3_A_4" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q3_A_5" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">Our project leadership is willing to engage in frank and open discussions when areas of disagreement exist</p>
+												<p class="white small">Nearly all (92%) respondents somewhat or strongly agreed that their project leadership was willing to engage in frank and open discussions when areas of disagreement exist. Respondents from Alliances with 2 years of funding were more likely to somewhat or strongly agree with this statement (98%, compared with 85% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</section>
+
+
+							<section class="block10 pt-3">
+
+								<div class="largerPadding">
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber2 medium">Our project leadership provides opportunities for building relationships across partners</p>
+												<p class="small white">Nearly all (95%) respondents somewhat or strongly agreed that their project leadership provided opportunities for building relationships across partners. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (71%, compared with 58% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes three">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q3_A_6" class="chart-container stacked orange" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q3_A_7" class="chart-container stacked orange" chart-type="stacked1"></div>
+										</div>
+
+
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber2 medium">Our project’s decision-making processes are transparent to those inside the project</p>
+												<p class="white small">Most (89%) respondents somewhat or strongly agreed that their project’s decision-making processes were transparent to those inside the project. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (59%, compared with 39% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes three">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+
+
+									</div>
+
+
+									<hr class="gray"></hr>
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber2 medium">Our Project's decisions are informed by input from our participant population (e.g., through representation by members of the participant population on a steering committee)</p>
+												<p class="white small">More than four-fifths (83%) of respondents somewhat or strongly agreed that their project’s decisions were informed by input from the participant population. Respondents from Alliances with 2 years of funding were slightly more likely to strongly agree with this statement (51%, compared with 46% for those from projects with 3 years of funding). </p>
+
+												<ul class="codes three">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+<!--  -->
+											</div>
+
+										</div>
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+
+											<div id="Q3_A_8" class="chart-container stacked orange" chart-type="stacked1"></div>
+											<!-- justin's chart goes here -->
+
+
+										</div>
+
+
+
+									</div>
+
+								</div>
+
+
+
+							</section>
+
+
+
+							<div class="largerPadding">
+								<div class="row mt-5">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">All of our core partners collaborate with each other to align their actions</p>
+											<p class="blue small">Most (88%) respondents somewhat or strongly agreed that all core partners collaborated with each other to align their actions. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (54%, compared with 39% for those from projects with 3 years of funding)</p>
+
+											<ul class="codes one">
+												<li><span></span>Strongly agree</li>
+												<li><span></span>Somewhat agree</li>
+												<li><span></span>Somewhat disagree</li>
+												<li><span></span>Strongly disagree</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q4_A_3" class="chart-container stacked blue" chart-type="stacked1"></div>
+									</div>
+								</div>
+
+								<hr class="gray"></hr>
+
+
+								<div class="row mt-5">
+
+									<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+										<div id="Q4_A_4" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+									<div class="col-lg-5 col-md-12 order-1">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium backwards">All of our core partners regularly seek advice from one another (e.g., effective strategies for addressing a given challenge)</p>
+											<p class="blue small">Nearly all (91%)respondents somewhat or strongly agreed that all core partners regularly seek advice from one another. Respondents from Alliances with 2 years of funding were more likely to strongly agree with this statement (48%, compared with 40% for those from projects with 3 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>Strongly agree</li>
+												<li><span></span>Somewhat agree</li>
+												<li><span></span>Somewhat disagree</li>
+												<li><span></span>Strongly disagree</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+
+							<section class="block10 pt-3">
+
+								<div class="largerPadding">
+									<div class="row mt-5">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">My organization shares its challenges, setbacks, and lessons learned with other partners on the project</p>
+												<p class="white small">Nearly all (89.4%) respondents somewhat or strongly agreed that their organizations shared their challenges, setbacks, and lessons learned with other partners on the project. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (46%, compared with 17% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q5_A_5" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray">
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q5_A_6" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">My organization seeks advice from other partners on the project (e.g., effective strategies for addressing a given challenge)</p>
+												<p class="white small">Nearly all (94%) respondents somewhat or strongly agreed that their organization seeks advice from other partners on the project. Respondents from Alliances with 3 years of funding were more likely to strongly agree with this statement (50%, compared with 33% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+							</section>
+
+
+
+						</div>
+
+						<div class="tab-pane" id="expansion" role="tabpanel">
+
+							<div class="largerPadding">
+
+								<p class="lighter mobileOnly text-center">Expansion, Sustainability, & Scale</p>
+								<p>Projects include plans that will lead to the expansion, sustainability, and scale of their activities. They describe their overall contribution to broadening participation in the nation’s scientific and engineering workforce. For large scale partnerships and networks, a “backbone” or support organization facilitates and sustains these efforts over the long term with support from the NSF INCLUDES Coordination Hub. (Source: NSF Program Solicitation 19-600.)</p>
+								<p>The graphics below portray survey findings for Expansion, Sustainability & Scale using respondents as the unit of analysis. <span class="blue strong highlight" data-toggle="modal" data-target="#expansionData">View <i class="far fa-window-restore"></i></span> project-level composite scores for survey items pertaining to Expansion, Sustainability & Scale.</p>
+
+								<div class="lightBlue pt-2 mt-4 mb-5">
+									<section class="block666">
+										<div class="d-flex align-items-center justify-content-start heros">
+											<i class="far fa-filter"></i>
+
+
+											<!-- <div class="form-group">
+
+												<label for="programType5" class="form-check-label mr-3">PROGRAM TYPE</label>
+												<select aria-required="true" class="form-control" id="programType5" size="1">
+													<option value="">All</option>
+													<option value="1">IHE Faculty</option>
+													<option value="2">IHE faculty and administrators at associate colleges</option>
+													<option value="3">IHE faculty, postdocs, graduate students, and administrators at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="4">K–20 educators</option>
+													<option value="5">K–12 teachers and administrators</option>
+													<option value="6">Other non K–12/IHE professionals</option>
+
+												</select>
+											</div> -->
+
+											<div class="form-group">
+
+												<label for="orgType5">Organization Type</label>
+												<select aria-required="true" class="form-control stacked-filter-select" id="orgType5" size="1">
+													<option value="all">All</option>
+													<option value="Lead Organization">Lead Organization</option>
+													<option value="Evaluation organization">Evaluation organization</option>
+													<option value="Partner organization">Partner organization</option>
+													<option value="Respondent participates as an individual and does not belong to an organization affiliated with the project">Respondent participates as an individual and does not belong to an organization affiliated with the project</option>
+													<option value="Backbone organization">Backbone organization</option>
+												</select>
+
+
+											</div>
+
+											<!-- <div class="form-group">
+
+												<label for="resType5">Respondent Type</label>
+												<select aria-required="true" class="form-control" id="resType5" size="1">
+													<option value="">All</option>
+													<option value="1">Elementary school students</option>
+													<option value="2">Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+													<option value="3">High school students</option>
+													<option value="4">K-20 students (cannot distinguish K-20 levels)</option>
+													<option value="5">Middle school students</option>
+													<option value="6">Other K-12 students (cannot distinguish K-12 levels)</option>
+													<option value="7">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="8">Students at associate colleges</option>
+													<option value="9">Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges</option>
+
+												</select>
+											</div> -->
+
+										</div>
+									</section>
+
+								</div>
+
+								<div class="row">
+									<div class="col-lg-5 col-md-12">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium">Our project contributes to the field’s knowledge base about effective strategies for broadening participation in STEM</p>
+											<p class="blue small">Nearly three-fourths (70%) of respondents indicated that their project had contributed (or had made significant progress toward contributing) to the field’s knowledge base about effective strategies for broadening participation in STEM. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (80%, compared with 61% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+
+											</ul>
+
+
+										</div>
+
+									</div>
+									<div class="col-lg-7 col-md-12">
+										<div id="Q2_A_7" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+								</div>
+
+								<hr class="gray"></hr>
+
+
+								<div class="row mt-5">
+
+									<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+										<div id="Q2_A_8" class="chart-container stacked blue" chart-type="stacked2"></div>
+									</div>
+									<div class="col-lg-5 col-md-12 order-1">
+										<div class="d-flex flex-column">
+											<p class="blueNumber medium backwards">Project has a written plan that outlines a strategy for sustaining activities beyond the current award period</p>
+											<p class="blue small">Just under one-third (30%) of respondents indicated that their project had (or had made significant progress toward developing) a written plan that outlined a strategy for sustaining activities beyond the current award period. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (33%, compared with 28% for those from projects with 2 years of funding).</p>
+
+											<ul class="codes one">
+												<li><span></span>This has been achieved</li>
+												<li><span></span>We have made significant progress</li>
+												<li><span></span>We have made some progress</li>
+
+												<li><span></span>We have not started yet</li>
+												<li><span></span>Project has no current plans to do this</li>
+											</ul>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</div>
+
+							<section class="block10 pt-3">
+
+								<div class="largerPadding">
+									<div class="row">
+										<div class="col-lg-5 col-md-12">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium">Project has secured funding beyond the current award period</p>
+												<p class="white small">Just over one-tenth (12%) of respondents indicated that their project had secured (or had made significant progress toward securing) funding beyond the current award period. Respondents from Alliances with 3 years of funding were more likely to report significant progress or achievement in this area (16%, compared with 9% for those from projects with 2 years of funding).</p>
+
+												<ul class="codes two">
+													<!-- <li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li> -->
+													<li><span></span>This has been achieved</li>
+													<li><span></span>We have made significant progress</li>
+													<li><span></span>We have made some progress</li>
+													<li><span></span>We have not started yet</li>
+													<li><span></span>Project has no current plans to do this</li>
+
+												</ul>
+
+
+											</div>
+
+										</div>
+										<div class="col-lg-7 col-md-12">
+											<div id="Q2_A_9" class="chart-container stacked green" chart-type="stacked2"></div>
+										</div>
+									</div>
+
+
+									<hr class="gray">
+
+
+									<div class="row mt-5">
+
+										<div class="col-lg-7 col-md-12 order-sm-1 order-2">
+											<div id="Q3_A_9" class="chart-container stacked green" chart-type="stacked1"></div>
+										</div>
+										<div class="col-lg-5 col-md-12 order-1">
+											<div class="d-flex flex-column">
+												<p class="whiteNumber medium backwards">Our project has a strategic vision of what activities will be sustained beyond the current award period</p>
+												<p class="white small">Nearly three-fourths (73%) of respondents somewhat or strongly agreed that their project had a strategic vision of what activities would be sustained beyond the current award period. Respondents from Alliances with 2 years of funding were more likely to somewhat or strongly agree with this statement (83%, compared with 62% for those from projects with 3 years of funding).</p>
+
+												<ul class="codes two">
+													<li><span></span>Strongly agree</li>
+													<li><span></span>Somewhat agree</li>
+													<li><span></span>Somewhat disagree</li>
+													<li><span></span>Strongly disagree</li>
+
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</section>
+
+
+
+						</div>
+
+
+
+					</div>
+
+					<section class="block500 pt-3">
+
+						<div class="container largerPadding">
+							<div class="container heros overlay">
+								<!-- <h3 class="white text-center strong mb-3">Lorem Ipsum Dolor</h3> -->
+								<p class="white">Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As such, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+								<p class="white">In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element.  However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+							</div>
+
+
+						</div>
+
+					</section>
+
+
+
+				</div>
+			</div>
+		</section>
+
+		<div class="back-to-top" tabindex="0">
+			<i aria-hidden="true" class="far fa-angle-up"></i>
+		</div>
+	</div>
+
+
+	<div class="modal fade hub" id="survey" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Collaborative Infrastructure Survey</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The Hub’s Collaborative Infrastructure (CI) Survey is designed to collect information about the progress that NSF INCLUDES-funded projects are making addressing specific components of the design elements of collaborative infrastructure. Six of the eight Alliances participated in the initial administration of this web-based survey (the other two opted out because they already administer similar surveys—but provided the Hub with their survey data). Each of the six Alliance identified key stakeholders (e.g., PIs, Co-PIs, staff, partners, researchers, and evaluators) who were in a position to assess progress regarding the design elements. The response rate for the survey was 70 percent (representing 88 of the 126 individuals who were asked to complete the survey).</p>
+				</div>
+				<div class="modal-footer mb-4">
+
+					<a href="images/survey-collab.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Protocol <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade hub" id="sharedVision" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Project-Level Analysis of Shared Vision Survey Items</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The NSF INCLUDES Coordination Hub’s Collaborative Infrastructure Survey is designed to document respondents’ assessment of their project’s progress addressing specific components of each design element. The graphics on the site portray survey findings using respondents as the unit of analysis. While this perspective is useful, it fails to consider whether respondents within a given project agreed about the level of progress around the design elements. In addition, there is considerable benefit in considering projects as the unit of analysis (e.g., to assess which design elements projects appear to be addressing in a given year of NSF INCLUDES funding). To address this, we used item-response theory and confirmatory factor analysis to generate project-level composite scores for each survey item.<sup>1</sup> This approach allowed us to assess the extent to which Alliances have operationalized the design element of collaborative infrastructure at a given point in time. <a class="blue strong" href="images/survey-findings.pdf" target="_blank">Learn more</a> about the methodology used to generate project-level findings.</p>
+					<p>Project-level survey responses regarding Shared Vision were high, with an overall score of 82.5 (and a range of 77.5 to 87.2 on a scale of 1 to 100). Additionally:</p>
+					<ul>
+						<li>At the item level, Alliance-level responses for Shared Vision were highest for two statements: <em>“Our project’s goals are informed by an assessment of the participant population’s needs”</em> (88.1) and <em>“All of our core partners are involved in the process of developing our project’s goals”</em> (87.5).</li>
+						<li>Alliance-level responses for Shared Vision were lowest for the third statement pertaining to shared vision: <em>“Our project has a plan that addresses systemic barriers to broadening participation in STEM”</em> (72.7).</li>
+						<li>There were no noteworthy differences regarding Shared Vision across Alliances by year of NSF INCLUDES funding.<sup>2,3</sup></li>
+					</ul>
+					<p class="blue bold text-center mt-4">Project-Level scores for Shared Vision</p>
+
+					<table class="table top text-center" style="display: table;">
+
+						<thead>
+							<tr>
+								<th scope="col" class="col-4">Survey item</th>
+								<th scope="col">Overall<br>(n=6 projects)</th>
+								<th scope="col">Year 2 of project<br>funding<br>(n=3 projects)</th>
+								<th scope="col">Year 3 of project<br>funding<br>(n=3 projects)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td class="text-left">Our project’s goals are informed by an assessment of the participant population’s needs</td>
+								<td><em>88.1 (76.5, 96.7)</em></td>
+								<td><em>86.2 (76.5, 96.7)</em></td>
+								<td><em>90.1 (81.3, 96.4)</em></td>
+							</tr>
+							<tr>
+
+								<td class="text-left">All of our core partners are involved in the process of developing our project’s goals</td>
+								<td><em>87.5 (81.3, 91.7)</em></td>
+								<td><em>88.4 (85.9, 90.9)</em></td>
+								<td><em>86.6 (81.3, 91.7)</em></td>
+							</tr>
+							<tr>
+								<td class="text-left">Our project has a plan that addresses systemic barriers to broadening participation in STEM</td>
+								<td>72.7 (68.8, 79.2)</td>
+								<td>74.3 (68.8, 79.2)</td>
+								<td>71.1 (69.2, 72.6)</td>
+							</tr>
+
+
+
+							<tr class="table-active">
+								<td class="text-left">Overall</td>
+								<td>82.5 (77.5, 87.2)</td>
+								<td>82.3 (79.2, 87.2)</td>
+								<td>82.8 (77.5, 86.6)</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+					<p class="small pt-3">Note: The score for a given survey item represents the overall standardized scale score obtained from the item-response theory and confirmatory factor analysis. Each score has a range of 1 to 100, with 100 representing the highest possible score—i.e., all respondents within a project answered the highest response category (either “achieved” or “strongly agree”) for a given survey item. In addition, we provide the minimum and maximum project-level standardized scale score response <em>(in italics)</em> for a given survey item.</p>
+					<hr>
+					<p class="small pt-3"><sup>1</sup> These approaches are designed to assess the relationship between the latent construct and observed items to test the reliability and validity of the measurement and quantify the attributes of interest.</p>
+					<p class="small"><sup>2</sup> Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As a result, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+					<p class="small"><sup>3</sup> In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element. However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+
+
+				</div>
+				<div class="modal-footer mb-4">
+
+						<a href="images/shared-vision-data.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade hub" id="partnerships" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Project-Level Analysis of Partnerships Survey Items</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The NSF INCLUDES Coordination Hub’s Collaborative Infrastructure Survey is designed to document respondents’ assessment of their project’s progress addressing specific components of each design element. The graphics on the site portray survey findings using respondents as the unit of analysis. While this perspective is useful, it fails to consider whether respondents within a given project agreed about the level of progress around the design elements. In addition, there is considerable benefit in considering projects as the unit of analysis (e.g., to assess which design elements projects appear to be addressing in a given year of NSF INCLUDES funding). To address this, we used item-response theory and confirmatory factor analysis to generate project-level composite scores for each survey item.<sup>4</sup> This approach allowed us to assess the extent to which Alliances have operationalized the design element of collaborative infrastructure at a given point in time. <a class="blue strong" href="images/survey-findings.pdf" target="_blank">Learn more</a> about the methodology used to generate project-level findings.</p>
+					<p>Project-level survey responses regarding Partnerships were largely positive, with an overall score of 75.3 (and a range of 64.3 to 82.1 on a scale of 1 to 100). Additionally:</p>
+					<ul>
+						<li>At the item level, Alliance-level responses for Partnerships were highest for the following two statements: <em>“The sum of our core and supporting partners represent the range of institutions needed to achieve our project’s goals”</em> (83.3) and <em>“Our project has a plan that clearly specifies each partner’s role”</em> (80.1).</li>
+						<li>Alliance-level responses for Partnerships were lowest for the following statement: <em>“Our project adds new partners to address a given need”</em> (66.5).</li>
+						<li>There were no differences for Partnerships across Alliances by year of NSF INCLUDES funding.<sup>5,6</sup></li>
+					</ul>
+					<p class="blue bold text-center mt-4">Project-Level scores for Partnerships</p>
+
+					<table class="table top text-center" style="display: table;">
+
+						<thead>
+							<tr>
+								<th scope="col" class="col-4">Survey item</th>
+								<th scope="col">Overall<br>(n=6 projects)</th>
+								<th scope="col">Year 2 of project<br>funding<br>(n=3 projects)</th>
+								<th scope="col">Year 3 of project<br>funding<br>(n=3 projects)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td class="text-left">The sum of our core and supporting partners represent the range of institutions needed to achieve our project’s goals</td>
+								<td><em>83.3 (79.2, 91.7)</em></td>
+								<td><em>80.5 (79.2, 82.4)</em></td>
+								<td><em>86.0 (81.8, 91.7)</em></td>
+							</tr>
+							<tr>
+
+								<td class="text-left">Our project has a plan that clearly specifies each partner’s role</td>
+								<td><em>80.1 (67.3, 92.9)</em></td>
+								<td><em>80.7 (67.3, 92.9)</em></td>
+								<td><em>79.6 (70.8, 85.7)</em></td>
+							</tr>
+
+							<tr>
+								<td class="text-left">The sum of our core and supporting partners reflect the diversity of our participant population</td>
+								<td>75.4 (52.1, 86.9)</td>
+								<td>76.7 (72.2, 81.3)</td>
+								<td>74.1 (52.1, 86.9)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project adds new partners to address a given need (e.g., to access crucial expertise and/or additional participants)</td>
+								<td>66.5 (54.2, 73.8)</td>
+								<td>66.6 (64.5, 70.0)</td>
+								<td>66.5 (54.2, 73.8)</td>
+							</tr>
+
+
+							<tr class="table-active">
+								<td class="text-left">Overall</td>
+								<td>75.3 (64.3, 82.1)</td>
+								<td>74.9 (70.5, 80.2)</td>
+								<td>74.9 (70.5, 80.2)</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+					<p class="small pt-3">Note: The score for a given survey item represents the overall standardized scale score obtained from the item-response theory and confirmatory factor analysis. Each score has a range of 1 to 100, with 100 representing the highest possible score—i.e., all respondents within a project answered the highest response category (either “achieved” or “strongly agree”) for a given survey item. In addition, we provide the minimum and maximum project-level standardized scale score response <em>(in italics)</em> for a given survey item.</p>
+					<hr>
+					<p class="small pt-3"><sup>4</sup> These approaches are designed to assess the relationship between the latent construct and observed items to test the reliability and validity of the measurement and quantify the attributes of interest.</p>
+					<p class="small"><sup>5</sup> Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As a result, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+					<p class="small"><sup>6</sup> In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element. However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+
+
+				</div>
+				<div class="modal-footer mb-4">
+
+						<a href="images/partnerships-data.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade hub" id="goalStats" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Project-Level Analysis of Goals & Metrics Survey Items</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The NSF INCLUDES Coordination Hub’s Collaborative Infrastructure Survey is designed to document respondents’ assessment of their project’s progress addressing specific components of each design element. The graphics on the site portray survey findings using respondents as the unit of analysis. While this perspective is useful, it fails to consider whether respondents within a given project agreed about the level of progress around the design elements. In addition, there is considerable benefit in considering projects as the unit of analysis (e.g., to assess which design elements projects appear to be addressing in a given year of NSF INCLUDES funding). To address this, we used item-response theory and confirmatory factor analysis to generate project-level composite scores for each survey item.<sup>7</sup> This approach allowed us to assess the extent to which Alliances have operationalized the design element of collaborative infrastructure at a given point in time. <a class="blue strong" href="images/survey-findings.pdf" target="_blank">Learn more</a> about the methodology used to generate project-level findings.</p>
+					<p>Project-level survey responses regarding Goals & Metrics were largely positive, with an overall score of 74.7 (and a range of 65.9 to 82.1 on a scale of 1 to 100). Additionally:</p>
+					<ul>
+						<li>At the item level, Alliance-level responses for Goals & Metrics were highest for the following statement: <em>“All of our core partners are involved in the process of making sense of findings that emerge from the project’s analysis of shared measurement data”</em> (81.2).</li>
+						<li>Alliance-level responses for Goals & Metrics were lowest for the following statement: <em>“Our project uses data to make regular improvements”</em> (68.3).</li>
+						<li>There were some noteworthy differences for Goals & Metrics across Alliances by year of NSF INCLUDES funding. Alliances with 3 years of NSF INCLUDES funding were slightly more likely to have higher composite scores for the following two statements: <em>“Our project has participatory processes to refine its measures, indicators, metrics, and/or data collection methods”</em> (77.3, compared to 71.2 for Alliances with 2 years of NSF INCLUDES funding) and <em>“Our project has the capacity to track progress across all partners”</em> (72.1, compared to 66.8 for Alliances with 2 years of NSF INCLUDES funding).<sup>8,9</sup></li>
+					</ul>
+					<p class="blue bold text-center mt-4">Project-Level score for Goals & Metrics</p>
+
+					<table class="table top text-center" style="display: table;">
+
+						<thead>
+							<tr>
+								<th scope="col" class="col-4">Survey item</th>
+								<th scope="col">Overall<br>(n=6 projects)</th>
+								<th scope="col">Year 2 of project<br>funding<br>(n=3 projects)</th>
+								<th scope="col">Year 3 of project<br>funding<br>(n=3 projects)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td class="text-left">All of our core partners are involved in the process of making sense of findings that emerge from the project’s analysis of shared measurement data</td>
+								<td><em>81.2 (75.0, 85.7)</em></td>
+								<td><em>81.0 (78.3, 82.5)</em></td>
+								<td><em>81.3 (75.0, 85.7)</em></td>
+							</tr>
+							<tr>
+
+								<td class="text-left">Our project has participatory processes to refine its measures, indicators, metrics, and/or data collection methods</td>
+								<td><em>74.2 (61.5, 81.8)</em></td>
+								<td><em>71.2 (61.5, 78.3)</em></td>
+								<td><em>77.3 (75.0, 81.8)</em></td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project has the capacity to track progress across all partners (e.g., protocols, common metrics)</td>
+								<td>69.4 (52.5, 84.1)</td>
+								<td>66.8 (52.5, 77.8)</td>
+								<td>72.1 (64.3, 84.1)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project uses data to make regular improvements</td>
+								<td>68.3 (52.1, 85.0)</td>
+								<td>67.6 (52.1, 85.0)</td>
+								<td>68.9 (65.0, 73.8)</td>
+							</tr>
+
+
+							<tr class="table-active">
+								<td class="text-left">Overall</td>
+								<td>74.7 (65.9, 82.1)</td>
+								<td>73.4 (65.9, 82.1)</td>
+								<td>76.0 (73.2, 79.3)</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+					<p class="small pt-3">Note: The score for a given survey item represents the overall standardized scale score obtained from the item-response theory and confirmatory factor analysis. Each score has a range of 1 to 100, with 100 representing the highest possible score—i.e., all respondents within a project answered the highest response category (either “achieved” or “strongly agree”) for a given survey item. In addition, we provide the minimum and maximum project-level standardized scale score response <em>(in italics)</em> for a given survey item.</p>
+					<hr>
+					<p class="small pt-3"><sup>7</sup> These approaches are designed to assess the relationship between the latent construct and observed items to test the reliability and validity of the measurement and quantify the attributes of interest.</p>
+					<p class="small"><sup>8</sup> Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As a result, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+					<p class="small"><sup>9</sup> In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element. However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+
+
+				</div>
+				<div class="modal-footer mb-4">
+
+						<a href="images/goals-data.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade hub" id="leadershipData" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Project-Level Analysis of Leadership & Communication Survey Items</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The NSF INCLUDES Coordination Hub’s Collaborative Infrastructure Survey is designed to document respondents’ assessment of their project’s progress addressing specific components of each design element. The graphics on the site portray survey findings using respondents as the unit of analysis. While this perspective is useful, it fails to consider whether respondents within a given project agreed about the level of progress around the design elements. In addition, there is considerable benefit in considering projects as the unit of analysis (e.g., to assess which design elements projects appear to be addressing in a given year of NSF INCLUDES funding). To address this, we used item-response theory and confirmatory factor analysis to generate project-level composite scores for each survey item.<sup>10</sup> This approach allowed us to assess the extent to which Alliances have operationalized the design element of collaborative infrastructure at a given point in time. <a class="blue strong" href="images/survey-findings.pdf" target="_blank">Learn more</a> about the methodology used to generate project-level findings.</p>
+					<p>Project-level survey responses regarding Leadership & Communication were overwhelmingly positive (compared to the other design elements), with an overall score of 85.6 (and a range of 67.2 to 94.2 on a scale of 1 to 100). Additionally:</p>
+					<ul>
+						<li>Alliance-level responses for were 81.0 or higher across all survey items pertaining to Leadership & Communication—with the highest score for the following statement: <em>“Our project’s leadership structure leverages the collective knowledge of partners and other stakeholders”</em> (90.1).</li>
+						<li>Alliance-level responses for Leadership & Communication were lowest for the following two statements (although the Alliance-level composite scores were still quite high): <em>“Our project has internal procedures that minimize power imbalances among partners”</em> (81.3) and <em>“Our project’s decisions are informed by input from our participant population”</em> (81.0).</li>
+						<li>There were some noteworthy differences across Alliances by year of NSF INCLUDES funding. Alliances with 2 years of NSF INCLUDES funding were more likely to have higher composite scores for all of the statements pertaining to Leadership & Communication.<sup>11,12</sup></li>
+					</ul>
+					<p class="blue bold text-center mt-4">Project-Level score for Leadership & Communication</p>
+
+					<table class="table top text-center" style="display: table;">
+
+						<thead>
+							<tr>
+								<th scope="col" class="col-4">Survey item</th>
+								<th scope="col">Overall<br>(n=6 projects)</th>
+								<th scope="col">Year 2 of project<br>funding<br>(n=3 projects)</th>
+								<th scope="col">Year 3 of project<br>funding<br>(n=3 projects)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td class="text-left">Our project’s leadership structure leverages the collective knowledge of partners and other stakeholders</td>
+								<td><em>90.1 (70.8, 100.0)</em></td>
+								<td><em>93.5 (88.9, 100.0)</em></td>
+								<td><em>86.7 (70.8, 96.4)</em></td>
+							</tr>
+							<tr>
+
+								<td class="text-left">Our project leadership provides opportunities for building relationships across partners</td>
+								<td><em>89.5 (70.8, 96.4)</em></td>
+								<td><em>92.2 (88.6, 95.0)</em></td>
+								<td><em>86.7 (70.8, 96.4)</em></td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project leadership is willing to engage in frank and open discussions when areas of disagreement exist</td>
+								<td>88.5 (59.1, 100.0)</td>
+								<td>92.3 (88.6, 96.7)</td>
+								<td>84.8 (59.1, 100.0)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project leadership has structures in place to encourage full participation by all partners</td>
+								<td>86.2 (66.7, 96.7)</td>
+								<td>91.0 (87.5, 96.7)</td>
+								<td>81.3 (66.7, 89.3)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">All of our core partners collaborate with each other to align their actions</td>
+								<td>83.8 (66.7, 92.9)</td>
+								<td>87.1 (80.9, 92.9)</td>
+								<td>80.6 (66.7, 91.7)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project’s decision-making processes are transparent to those inside the project </td>
+								<td>83.6 (68.8, 95.0)</td>
+								<td>87.3 (79.5, 95.0)</td>
+								<td>79.8 (68.8, 85.7)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">All of our core partners regularly seek advice from one another (e.g., effective strategies for addressing a given challenge)</td>
+								<td>82.2 (68.8, 95.0)</td>
+								<td>85.1 (77.9, 95.0)</td>
+								<td>79.3 (68.8, 90.0)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project has internal procedures that minimize power imbalances among partners</td>
+								<td>81.3 (62.5, 90.0)</td>
+								<td>84.2 (75.0, 90.0)</td>
+								<td>78.5 (62.5, 87.5)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project’s decisions are informed by input from our participant population (e.g., through representation by members of the participant population on a steering committee)</td>
+								<td>81.0 (62.5, 92.5)</td>
+								<td>84.1 (77.8, 89.6)</td>
+								<td>77.9 (62.5, 92.5)</td>
+							</tr>
+
+
+							<tr class="table-active">
+								<td class="text-left">Overall</td>
+								<td>85.6 (67.2, 94.2)</td>
+								<td>89.0 (85.3, 94.2)</td>
+								<td>82.2 (67.2, 89.8)</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+					<p class="small pt-3">Note: The score for a given survey item represents the overall standardized scale score obtained from the item-response theory and confirmatory factor analysis. Each score has a range of 1 to 100, with 100 representing the highest possible score—i.e., all respondents within a project answered the highest response category (either “achieved” or “strongly agree”) for a given survey item. In addition, we provide the minimum and maximum project-level standardized scale score response <em>(in italics)</em> for a given survey item.</p>
+					<hr>
+					<p class="small pt-3"><sup>10</sup> These approaches are designed to assess the relationship between the latent construct and observed items to test the reliability and validity of the measurement and quantify the attributes of interest.</p>
+					<p class="small"><sup>11</sup> Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As a result, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+					<p class="small"><sup>12</sup> In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element. However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+
+
+				</div>
+				<div class="modal-footer mb-4">
+
+						<a href="images/leadership-data.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade hub" id="expansionData" tabindex="-1" role="dialog" aria-labelledby="Collaborative Infrastructure Survey Information" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="blueFont text-center bold mb-0">Project-Level Analysis of Expansion, Sustainability & Scale Survey Items</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The NSF INCLUDES Coordination Hub’s Collaborative Infrastructure Survey is designed to document respondents’ assessment of their project’s progress addressing specific components of each design element. The graphics on the site portray survey findings using respondents as the unit of analysis. While this perspective is useful, it fails to consider whether respondents within a given project agreed about the level of progress around the design elements. In addition, there is considerable benefit in considering projects as the unit of analysis (e.g., to assess which design elements projects appear to be addressing in a given year of NSF INCLUDES funding). To address this, we used item-response theory and confirmatory factor analysis to generate project-level composite scores for each survey item.<sup>13</sup> This approach allowed us to assess the extent to which Alliances have operationalized the design element of collaborative infrastructure at a given point in time. <a class="blue strong" href="images/survey-findings.pdf" target="_blank">Learn more</a> about the methodology used to generate project-level findings.</p>
+					<p>Project-level survey responses regarding Expansion, Sustainability & Scale were relatively low (compared to the other design elements), with an overall score of 62.6 (and a range of 48.0 to 70.6 on a scale of 1 to 100). Additionally:</p>
+					<ul>
+						<li>At the item level, Alliance-level responses were highest for the following two statements: <em>“Our project contributes to the field’s knowledge base about effective strategies for broadening participation in STEM”</em> (72.7) and <em>“Our project has a strategic vision of what activities will be sustained beyond the current award period”</em> (72.7).</li>
+						<li>Alliance-level responses were lowest for the following statement: <em>“Our project has secured funding beyond the current award period”</em> (42.8).</li>
+						<li>There were some noteworthy differences for Expansion, Sustainability & Scale across Alliances by year of NSF INCLUDES funding.<sup>14,15</sup> Specifically:</li>
+						<ul>
+							<li>Alliances with 3 years of NSF INCLUDES funding were more likely to have higher composite scores for the following two statements: <em>“Our project contributes to the field’s knowledge base about effective strategies for broadening participation in STEM”</em> (76.8, compared to 68.6 for Alliances with 2 years of NSF INCLUDES funding) and <em>“Our project has secured funding beyond the current award period”</em> (47.8, compared to 37.9 for Alliances with 2 years of NSF INCLUDES funding).</li>
+							<li>Alliances with 2 years of NSF INCLUDES funding were more likely to have higher composite scores for the following statement: <em>“Our project has a strategic vision of what activities will be sustained beyond the current award period”</em> (76.3, compared to 69.0 for Alliances with 3 years of NSF INCLUDES funding).</li>
+						</ul>
+					</ul>
+					<p class="blue bold text-center mt-4">Project-Level score for Expansion, Sustainability & Scale</p>
+
+					<table class="table top text-center" style="display: table;">
+
+						<thead>
+							<tr>
+								<th scope="col" class="col-4">Survey item</th>
+								<th scope="col">Overall<br>(n=6 projects)</th>
+								<th scope="col">Year 2 of project<br>funding<br>(n=3 projects)</th>
+								<th scope="col">Year 3 of project<br>funding<br>(n=3 projects)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td class="text-left">Our project contributes to the field’s knowledge base about effective strategies for broadening participation in STEM</td>
+								<td><em>72.7 (63.5, 78.6)</em></td>
+								<td><em>68.6 (63.5, 72.2)</em></td>
+								<td><em>76.8 (75.0, 78.6)</em></td>
+							</tr>
+							<tr>
+
+								<td class="text-left">Our project has a strategic vision of what activities will be sustained beyond the current award period</td>
+								<td><em>72.7 (47.7, 85.7)</em></td>
+								<td><em>76.3 (70.5, 83.3)</em></td>
+								<td><em>69.0 (47.7, 85.7)</em></td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project has a written plan that outlines a strategy for sustaining activities beyond the current award period</td>
+								<td>52.9 (39.6, 66.7)</td>
+								<td>52.6 (46.9, 56.3)</td>
+								<td>53.3 (39.6, 66.7)</td>
+							</tr>
+
+							<tr>
+								<td class="text-left">Our project has secured funding beyond the current award period</td>
+								<td>42.8 (32.5, 57.1)</td>
+								<td>37.9 (32.5, 43.8)</td>
+								<td>47.8 (36.1, 57.1)</td>
+							</tr>
+
+
+							<tr class="table-active">
+								<td class="text-left">Overall</td>
+								<td>62.6 (48.0, 70.6)</td>
+								<td>62.5 (61.1, 64.9)</td>
+								<td>62.7 (48.0, 70.6)</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+					<p class="small pt-3">Note: The score for a given survey item represents the overall standardized scale score obtained from the item-response theory and confirmatory factor analysis. Each score has a range of 1 to 100, with 100 representing the highest possible score—i.e., all respondents within a project answered the highest response category (either “achieved” or “strongly agree”) for a given survey item. In addition, we provide the minimum and maximum project-level standardized scale score response <em>(in italics)</em> for a given survey item.</p>
+					<hr>
+					<p class="small pt-3"><sup>13</sup> These approaches are designed to assess the relationship between the latent construct and observed items to test the reliability and validity of the measurement and quantify the attributes of interest.</p>
+					<p class="small"><sup>14</sup> Because the survey was administered for the first time in spring 2021, we presently have no data on respondents’ perceptions of progress at the end of the first year of NSF INLCUDES funding. (Going forward, we expect to obtain Year 1 data from NSF INCLUDES Planning Grants and Cohort 3 Alliances.) As a result, we are currently unable to provide information about the relative progress that respondents would have reported for their initial year.</p>
+					<p class="small"><sup>15</sup> In theory, one would expect that Alliances with more years of NSF INCLUDES funding would report more progress around the operationalization of a given design element. However, we are somewhat cautious when making such comparisons, because it is possible that the characteristics of Alliances funded in a given cohort differ (e.g., in terms of the maturity and complexity of their partnership structure, the range of barriers they are designed to address, the characteristics of their participant population, and the complexity of their approach). In addition, respondents’ perspectives concerning their accomplishments (or the progress they still need to make) around a given design element may shift as they recognize the complexity of a given issue—with respondents realizing more work is needed as they begin to delve more deeply into a particular task.</p>
+
+
+
+				</div>
+				<div class="modal-footer mb-4">
+
+						<a href="images/expansion-data.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+					<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-wrapper-top">
+
+			<img src="images/footer.svg" class="img-responsive">
+			<p class="white smaller">This material is based upon work supported by the National Foundation under grant HRD-1818635. Any opinions, findings, and conclusions or recommendations expressed in the material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+
+
+		</div>
+
+		<div class="footer-wrapper">
+
+		</div>
+	</footer>
+
+
+
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/charts.js"></script>
+
+
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="form.js"></script>
+</body>
+</html>

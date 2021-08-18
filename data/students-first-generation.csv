@@ -1,0 +1,225 @@
+Program_Type,Alliance,Record,Year,Service_Type,Student_Type,Generation_status,Count_Type,Count
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,20
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,8
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,13
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,6
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,5
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,11
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,8
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,12
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,5
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,15
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,5
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,7
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,10
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,4
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,10
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,7
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,12
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,8
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,6
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,6
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,18
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,9
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,19
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,4
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,17
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,17
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,4
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,9
+NSF INCLUDES,Aspire,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,19
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,13
+NSF INCLUDES,Aspire,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,13
+NSF INCLUDES,Aspire,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,20
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,5
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,12
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,15
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,9
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,1
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,14
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,17
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,19
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,3
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,16
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,5
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,14
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,20
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,18
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,1
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,2
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,8
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,6
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,8
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,5
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,12
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,6
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,3
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,15
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,14
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,1
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,10
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,4
+NSF INCLUDES,First2,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,5
+NSF INCLUDES,First2,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,6
+NSF INCLUDES,First2,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,2
+NSF INCLUDES,First2,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,3
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,12
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,4
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,3
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,9
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,3
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,7
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,1
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,9
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,20
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,7
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,5
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,9
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,20
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,7
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,3
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,15
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,12
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,12
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,8
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,13
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,7
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,19
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,9
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,20
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,8
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,10
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,2
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,8
+NSF INCLUDES,IGEN,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,15
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,9
+NSF INCLUDES,IGEN,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,6
+NSF INCLUDES,IGEN,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,1
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,19
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,11
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,4
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,19
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,3
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,5
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,20
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,12
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,17
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,3
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,10
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,5
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,7
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,1
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,19
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,10
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,2
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,8
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,13
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,16
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,2
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,4
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,20
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,18
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,11
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,10
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,17
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,14
+NSF INCLUDES,SEAS,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,10
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,19
+NSF INCLUDES,SEAS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,1
+NSF INCLUDES,SEAS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,2
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,6
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,17
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,5
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,11
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,19
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,10
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,3
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,6
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,4
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,1
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,15
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,8
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,8
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,15
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,10
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,12
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,15
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,18
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,18
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,8
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,6
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,7
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,18
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,3
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,4
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,7
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,1
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,1
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,3
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,9
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,12
+NSF INCLUDES,STEM-CORE,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,13
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,18
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,15
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,8
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,16
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,1
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,16
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,19
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,2
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,9
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,1
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,11
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,14
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,14
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,1
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,12
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,4
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,9
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,8
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,6
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,13
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,10
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,9
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,7
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,2
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,5
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,7
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,13
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,15
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,7
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,7
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,4
+NSF INCLUDES,STEM-PUSH,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,6
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,First-generation college student,Unduplicated,6
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,1
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Unduplicated,20
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Unduplicated,14
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Unduplicated,4
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,19
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Unduplicated,11
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Unduplicated,18
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Unduplicated,10
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,5
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Unduplicated,5
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Unduplicated,16
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not collected by project,Unduplicated,12
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,20
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Unduplicated,18
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Unduplicated,16
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,First-generation college student,Duplicated,19
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,12
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",First-generation college student,Duplicated,15
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),First-generation college student,Duplicated,13
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not a first-generation college student,Duplicated,4
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,18
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not a first-generation college student,Duplicated,1
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not a first-generation college student,Duplicated,13
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not provided by respondent,Duplicated,4
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,4
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not provided by respondent,Duplicated,8
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not provided by respondent,Duplicated,11
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Students at associate colleges,Not collected by project,Duplicated,7
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Undergraduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,9
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,"Graduate students at doctoral-granting institutions, masters colleges and universities, and baccalaureate colleges",Not collected by project,Duplicated,9
+NSF INCLUDES,STEM-OPS,1,2019-20,Direct,Post-secondary students (cannot distinguish among IHE levels),Not collected by project,Duplicated,2

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta content-type="text/plain" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link type="image/png" href="images/logo.png" rel="icon">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/map.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+
+
+
+</style>
+
+<body>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+        <div id="map-canvas"></div>
+
+
+        <div class="outer">
+
+          <div class="buttonGroup">
+
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary projectType" tabindex="0" aria-hidden="false" role="button">
+                <input type="radio" name="options" autocomplete="off">Project<br> Type
+              </label>
+              <label class="btn btn-secondary orgType active" tabindex="0" aria-hidden="false" role="button">
+                <input type="radio" name="options" autocomplete="off">Organization <br>Type
+              </label>
+
+              <label class="btn btn-secondary allianceType" tabindex="0" aria-hidden="false" role="button">
+                <input type="radio" name="options" autocomplete="off">Alliance <br>Name
+              </label>
+
+            </div>
+
+
+          </div>
+
+          <div id="type">
+            <div class="group1">
+
+
+              <label class="btn btn-secondary" for="Doctoral" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="Doctoral" value="Doctoral">
+                <img src="images/Doctoral-circle.svg">
+                <p> Doctoral granting institution</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+
+              <label class="btn btn-secondary" for="National" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="National" value="National">
+                <img src="images/Corporation-circle.svg">
+                <p> Large National Corporation</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+              <label class="btn btn-secondary" for="Company" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="Company" value="Company">
+                <img src="images/local.svg">
+                <p> Local Company</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+
+              <label class="btn btn-secondary" for="HighSchool" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="HighSchool" value="HighSchool">
+                <img src="images/HS-circle.svg">
+                <p> High School</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+              <label class="btn btn-secondary" for="Other2" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="Other2" value="Other">
+                <img src="images/Others-circle.svg">
+                <p> Others</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+              <label class="btn btn-secondary" for="College" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="organization" id="College" value="College">
+                <img src="images/Associate-Circle.svg">
+                <p> Associate College</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="organization" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+
+            </div>
+
+            <div class="group2">
+
+
+              <label class="btn btn-secondary" for="Aspire" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="alliance" id="Aspire" value="Aspire">
+                <img src="images/Aspire-circle.svg">
+                <p>ASPIRE</p>
+
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="alliance" id="all" value="" class="abso">
+                  <label for="all"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+
+              <label class="btn btn-secondary" for="First2" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="alliance" id="First2" value="First2">
+                <img src="images/F2-circle.svg">
+                <p>FIRST2</p>
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="alliance" id="all2" value="" class="abso">
+                  <label for="all2"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+              <label class="btn btn-secondary" for="IGEN" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="alliance" id="IGEN" value="IGEN">
+                <img src="images/IGEN-circle.svg">
+                <p>IGEN</p>
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="alliance" id="all3" value="" class="abso">
+                  <label for="all3"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+              <label class="btn btn-secondary" for="STEMCORE" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="alliance" id="STEMCORE" value="STEMCORE">
+                <img src="images/STEMCORE-circle.svg">
+                <p>STEMCORE</p>
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="alliance" id="all4" value="" class="abso">
+                  <label for="all4"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+
+              <label class="btn btn-secondary" for="STEMPUSH" tabindex="0" aria-hidden="false" role="button">
+                <input type="checkbox" name="alliance" id="STEMPUSH" value="STEMPUSH">
+                <img src="images/StemPush-Circle.svg">
+                <p>STEMPUSH</p>
+                <span class="showOnClick ml-3">
+
+                  <input type="checkbox" name="alliance" id="all5" value="" class="abso">
+                  <label for="all5"><i class="fal fa-times white"></i></label>
+                </span>
+
+              </label>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="filterData pt-5 pb-5">
+
+          <div class="darkBlue pb-5 pt-3 container">
+
+
+            <div class="form-row">
+
+              <div class="col-sm-12 col-md-4">
+
+
+                <label for="org" class="sortOrgName">ORGANIZATION NAME <i class="far fa-sort darkBlue"></i></label>
+                <select class="custom-select form-control" id="org">
+
+
+                </select>
+
+              </div>
+
+              <div class="col-sm-12 col-md-2">
+
+                <label for="alliance" class="sortAlliance">ALLIANCE <i class="far fa-sort darkBlue"></i></label>
+                <select id="alliance" class="custom-select form-control">
+                  <option selected="selected">All</option>
+                  <option value="Aspire">Aspire</option>
+                  <option value="CAHSI">CAHSI</option>
+                  <option value="First2">First2 Network</option>
+                  <option value="IGEN">IGEN</option>
+                  <option value="SEAS">SEAS</option>
+                  <option value="STEMCORE">STEM Core</option>
+                  <option value="STEMOPS">STEM OPS</option>
+                  <option value=STEMPUSH>STEM Push</option>
+
+
+
+                </select>
+
+              </div>
+              <div class="col-sm-12 col-md-3">
+
+                <label for="orgType" class="sortOrgType">ORGANIZATION TYPE <i class="far fa-sort darkBlue"></i></label>
+                <select id="orgType" class="custom-select form-control">
+                  <option selected="selected">All</option>
+                  <option value="Other">Foundation or other non-profit organization</option>
+                  <option value="Doctoral"> Doctoral granting institution</option>
+                  <option value="Company">Company</option>
+                  <option value="HighSchool">High School</option>
+                  <option value="National">Large National Corporation</option>
+
+
+
+                </select>
+
+              </div>
+              <div class="col-sm-12 col-md-2">
+
+                <label for="location" class="sortLocation">LOCATION <i class="far fa-sort darkBlue"></i></label>
+                <select id="location" class="custom-select form-control">
+                  <option selected="selected">All</option>
+                  <option value="AK">Silver Spring, MD</option>
+                  <option value="AL">Bethlehem, PA</option>
+                </select>
+
+              </div>
+              <div class="col-sm-12 col-md-1">
+
+                <label for="zip" class="sortAllianceID">ZIP <i class="far fa-sort darkBlue"></i></label>
+                <select id="zip" class="custom-select form-control orgZip">
+                  <option selected="selected">All</option>
+                  <option value="20910">20910</option>
+                  <option value="18015">18015</option>
+
+                </select>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-sm-12">
+
+                <div class="scrollThis">
+                  <div class="appendRows renderOrgs">
+
+                    <div class="addBlocks orgBlocks d-flex align-items-center flex-wrap">
+
+                      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL NAME</div>
+                        <p class="white orgName">Achieving the Dream (ATD) Network</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">ASSESSMENT DATE</div>
+                        <p class="white allianceName">Aspire</p>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL RECRUITMENT CODE</div>
+                        <p class="white orgType">Foundation or other non-profit organization</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgLocation">Silver Spring, MD</p>
+                      </div>
+
+                      <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgZip">20910</p>
+                      </div>
+
+                    </div>
+
+                    <div class="addBlocks orgBlocks d-flex align-items-center flex-wrap">
+
+                      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL NAME</div>
+                        <p class="white orgName">American Astronomical Society</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">ASSESSMENT DATE</div>
+                        <p class="white allianceName">IGEN</p>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL RECRUITMENT CODE</div>
+                        <p class="white orgType">Foundation or other non-profit organization</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgLocation">Washington, DC</p>
+                      </div>
+
+                      <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgZip">20006</p>
+                      </div>
+
+                    </div>
+
+
+                    <div class="addBlocks orgBlocks d-flex align-items-center flex-wrap">
+
+                      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL NAME</div>
+                        <p class="white orgName">Chemours</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">ASSESSMENT DATE</div>
+                        <p class="white allianceName">First2 Network</p>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL RECRUITMENT CODE</div>
+                        <p class="white orgType">Company</p>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgLocation">Washington, WV</p>
+                      </div>
+
+                      <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+                        <div class="mobile">SCHOOL ID</div>
+                        <p class="white orgZip">26181</p>
+                      </div>
+
+                    </div>
+
+
+
+
+                  </div>
+
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="col-sm-12 col-md-5">
+
+        <label for="dynamic1">Select One</label>
+        <select class="js-select2 custom-select form-control" id="dynamic1">
+          <option>Alabama</option>
+          <option>Alaska</option>
+          <option>Arizona</option>
+          <option>Arkansas</option>
+          <option>California</option>
+          <option>Colorado</option>
+          <option>Connecticut</option>
+          <option>Delaware</option>
+          <option>Florida</option>
+          <option>Georgia</option>
+          <option>Hawaii</option>
+          <option>Idaho</option>
+          <option>Illinois</option>
+          <option>Indiana</option>
+          <option>Iowa</option>
+          <option>Kansas</option>
+          <option>Kentucky</option>
+          <option>Louisiana</option>
+          <option>Maine</option>
+          <option>Maryland</option>
+          <option>Massachusetts</option>
+          <option>Michigan</option>
+          <option>Minnesota</option>
+          <option>Mississippi</option>
+          <option>Missouri</option>
+          <option>Montana</option>
+          <option>Nebraska</option>
+          <option>Nevada</option>
+          <option>New Hampshire</option>
+          <option>New Jersey</option>
+          <option>New Mexico</option>
+          <option>New York</option>
+          <option>North Carolina</option>
+          <option>North Dakota</option>
+          <option>Ohio</option>
+          <option>Oklahoma</option>
+          <option>Oregon</option>
+          <option>Pennsylvania</option>
+          <option>Rhode Island</option>
+          <option>South Carolina</option>
+          <option>South Dakota</option>
+          <option>Tennessee</option>
+          <option>Texas</option>
+          <option>Utah</option>
+          <option>Vermont</option>
+          <option>Virginia</option>
+          <option>Washington</option>
+          <option>West Virginia</option>
+          <option>Wisconsin</option>
+          <option>Wyoming</option>
+        </select>
+      </div>
+
+      </div>
+
+        <div class="content-spacer"></div>
+          <div class="content-spacer"></div>
+            <div class="content-spacer"></div>
+            <div class="content-spacer"></div>
+            <div class="content-spacer"></div>
+              <div class="content-spacer"></div>
+                <div class="content-spacer"></div>
+                  <div class="content-spacer"></div>
+                    <div class="content-spacer"></div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+  <!-- <script src="js/TweenMax.min.js"></script> -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src="form.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGBgMl7eo2YMsoIQckljjlJJ5aFsTs0g4&libraries=places"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+
+
+
+</body>
+</html>

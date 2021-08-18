@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 190.9 190.9" enable-background="new 0 0 190.9 190.9" xml:space="preserve">
+<g id="Layer_1">
+</g>
+<g id="Great">
+</g>
+<g id="Good">
+	<linearGradient id="light-green-circle_1_" gradientUnits="userSpaceOnUse" x1="27.958" y1="162.9511" x2="162.9511" y2="27.958">
+		<stop  offset="3.906250e-03" style="stop-color:#AADC53"/>
+		<stop  offset="0.385" style="stop-color:#ADDC52"/>
+		<stop  offset="0.6852" style="stop-color:#B7DD4E"/>
+		<stop  offset="0.9569" style="stop-color:#C8DE48"/>
+		<stop  offset="1" style="stop-color:#CBDE47"/>
+	</linearGradient>
+	<circle id="light-green-circle" fill="url(#light-green-circle_1_)" cx="95.5" cy="95.5" r="95.5"/>
+	<ellipse id="right-eye_3_" fill="#557C09" cx="57.3" cy="79.6" rx="10.7" ry="12.1"/>
+	<ellipse id="left-eye_3_" fill="#557C09" cx="133.7" cy="79.6" rx="10.7" ry="12.1"/>
+	<path id="smile-mouth" fill="#557C09" d="M98.2,160.7c-30.7,0-41.6-23.5-43-35.9c-0.3-2.2,1.3-4.2,3.5-4.4c2.2-0.2,4.2,1.3,4.4,3.5
+		c0.1,1.2,3.9,28.8,35.1,28.8c31.2,0,33.3-27.4,33.3-28.6c0.1-2.2,2-3.9,4.2-3.7c2.2,0.1,3.9,2,3.7,4.2
+		C139.5,125,136.8,160.7,98.2,160.7z"/>
+</g>
+<g id="Average">
+</g>
+<g id="Poor">
+</g>
+<g id="VeryPoor">
+</g>
+</svg>

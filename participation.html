@@ -1,0 +1,2388 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta content-type="text/plain" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link type="image/png" href="images/logo.png" rel="icon">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+
+	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/charts.css">
+	<link rel="stylesheet" href="css/map.css">
+	<link rel="stylesheet" href="css/tip.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<script src="vendorlibs/d3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+	<script src="vendorlibs/d3-v6-tip.js"></script>
+
+	<script id="students-table-template" type="text/x-handlebars-template">
+		<thead>
+			<tr>
+				<th scope="col">{{dataSet}}</th>
+				<th scope="col">Number</th>
+				<th scope="col">Percent</th>
+
+			</tr>
+		</thead>
+		{{#each data}}
+		<tr>
+			<td>{{label}}</td>
+			<td>{{value}}</td>
+			<td>{{percentage}}</td>
+		</tr>
+		{{/each}}
+		<tr class="total-row">
+			<td>Total</td>
+			<td>{{total}}</td>
+			<td>100.0%</td>
+		</tr>
+	</script>
+
+	<script id="drop-filter-template" type="text/x-handlebars-template">
+		{{#each this}}
+		<option value="{{this}}">{{this}}</option>
+		{{/each}}
+	</script>
+</head>
+
+<body>
+	<a href="#themaincontent" id="skiptocontent" tabindex="0" aria-hidden="false">skip to main content</a>
+	<h1 class="sr-only">NSF INCLUDES National Network</h1>
+
+	<div class="container-fluid overflow-hidden position-relative">
+
+
+		<section class="top-search-container" data-attached="globalSearch" data-type="input">
+			<div class="top-search-input-wrapper">
+
+				<form id="tipue_search" action="search.html">
+					<div class="input-group">
+						<input type="text" name="q" id="tipue_search_input" autocomplete="off" type="text" aria-label="Global Search" tabindex="-1" placeholder="Search for keywords, etc..." value="" required class="form-control">
+
+						<div class="input-group-append">
+							<button class="hide-btn tipue_button search" tabindex="-1" role="button" id="search">
+								<i class="far fa-search blue"></i>
+							</button>
+						</div>
+					</div>
+
+					<label for="per_page" style="display:none">Results per page:</label>
+					<select name="per_page" id="tipue_per_page" style="display:none">
+						<option value="7" selected="selected">7</option>
+						<option value="20">20</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+
+				</form>
+
+			</div>
+			<span tabindex="-1" role="button" class="closeTopSearch">
+				<i class="fal fa-times blue"></i>
+			</span>
+		</section>
+
+
+		<!-- <img class="imgBottom img-fluid" src="images/green-bottom.svg" alt=""> -->
+
+		<!-- 		<img class="imgBottomLeft img-fluid" src="images/orange.svg" alt=""> -->
+
+		<header id="Home">
+			<nav class="navbar navbar-expand-md thirty">
+				<div class="container-fluid position-relative wrap">
+
+					<a href="https://www.includesnetwork.org/home" target="_blank" class="mneg5">
+						<img src="images/back-arrow.svg" class="img-fluid" alt="Go to Includes Network Homepage">
+						<span class="show767"><p class="blue"><i class="far fa-arrow-left"></i> National Network</p></span>
+					</a>
+
+					<a class="pb-0 ml-2" href="index.html">
+						<img src="images/Includes-logo.png" class="img-fluid logo" alt="NSF INCLUDES National Network Logo">
+					</a>
+
+
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="participation.html" id="drop1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Program Participation
+								</a>
+								<div class="dropdown-menu" aria-labelledby="drop1">
+									<a class="dropdown-item openTab1" href="participation.html#tabs-1">Projects</a>
+									<a class="dropdown-item openTab2" href="participation.html#tabs-2">Students & Educators</a>
+
+									<a class="dropdown-item openTab3" href="participation.html#tabs-3">Partners</a>
+									<a class="dropdown-item openTab4" href="participation.html#tabs-4">STEM BP Resources</a>
+								</div>
+							</li>
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="infrastructure.html" id="drop2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Collaborative Infrastructure
+								</a>
+								<div class="dropdown-menu" aria-labelledby="drop2">
+									<a class="dropdown-item" href="infrastructure.html#vision">Shared Vision</a>
+									<a class="dropdown-item" href="infrastructure.html#network">Partnerships</a>
+
+									<a class="dropdown-item" href="infrastructure.html#goals">Goals & Metrics</a>
+									<a class="dropdown-item" href="infrastructure.html#leadership">Leadership & Communication</a>
+									<a class="dropdown-item" href="infrastructure.html#expansion">Expansion, Sustainability & Scale</a>
+								</div>
+							</li>
+
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="stem.html" id="drop3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								STEM BP Outcomes
+								</a>
+								<div class="dropdown-menu last" aria-labelledby="drop3">
+									<a class="dropdown-item" href="stem.html#tabs-1">Preparation for STEM Education</a>
+									<a class="dropdown-item" href="stem.html#tabs-2">Student Interest, Identity, & Confidence in STEM</a>
+
+									<a class="dropdown-item" href="stem.html#tabs-3">Academic Outcomes</a>
+									<a class="dropdown-item" href="stem.html#tabs-4">Workforce Representation</a>
+
+								</div>
+							</li>
+
+
+						</ul>
+
+
+					</div>
+
+
+					<div class="position-relative d-flex align-items-center">
+
+						<button class="navbar-toggler collapsed mr-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><i class="fal fa-times"></i></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<a class="search blue" tabindex="0"><i class="far fa-search"></i></a>
+
+					</div>
+
+				</div>
+			</nav>
+		</header>
+
+
+		<div id="slideOut2">
+			<div class="slideOutTab">
+				<div id="one" class="openTab bottomShadow" role="button" tabindex="0" aria-label="Contact">
+
+					<p class="black"><i class="fal fa-file-chart-line"></i> <span class="noMobile">Request to Submit Project Data</span></p>
+
+
+				</div>
+				<div id="two" class="openTab bottomShadow" data-dismiss="modal" aria-controls="right-nav-contact" aria-selected="false" tabindex="0">
+
+					<p class="black"><i aria-hidden="true" class="fal fa-envelope"></i> <span class="noMobile">Contact Us</span></p>
+				</div>
+			</div>
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="closeThisPlease" id="close">
+						<p class="blackLarger text-center changeTitle"><b>Rate your Experience</b></p>
+						<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+							&#10005;
+						</button>
+					</div>
+
+				</div>
+				<div class="modal-body">
+
+					<div class="secondBlock">
+						<div class="hideOnSubmit">
+						<p>If you are interested in submitting data about your project, please complete this initial request and a member of the Coordination Hub will contact you to coordinate next steps.</p>
+						<p class="strong">Note that a request to provide data about your project may be submitted at any time throughout the year.</p>
+					</div>
+
+						<form role="form" type="post" id="theform2">
+
+							<div class="form-group">
+								<label for="formControl11">Name</label>
+								<input id="formControl11" type="text" class="form-control required" tabindex="0" aria-hidden="false" name="name" data-form-field="Name" required>
+							</div>
+							<div class="form-group">
+								<label for="formControl12">Email</label>
+								<input type="email" id="formControl12" class="form-control required" tabindex="0" aria-hidden="false" name="email" data-form-field="Email" required>
+							</div>
+
+							<div class="form-group">
+								<label for="formControl13">Phone (optional)</label>
+								<input type="text" id="formControl13" class="form-control" tabindex="0" aria-hidden="false" name="phone" data-form-field="Phone">
+							</div>
+
+							<div class="form-group">
+								<label for="formControl14">Program Name</label>
+								<input type="text" id="formControl14" class="form-control" tabindex="0" aria-hidden="false" name="Program Name" data-form-field="Program Name">
+							</div>
+
+							<div class="form-group">
+								<label for="formControl15">Project Name</label>
+								<input type="text" id="formControl15" class="form-control" tabindex="0" aria-hidden="false" name="Project Name" data-form-field="Project Name">
+							</div>
+
+							<p>What data are you interested in submitting? (select all that apply)</p>
+
+							<div class="form-group">
+								<fieldset>
+									<div class="one">
+										<input class="form-check-input" type="checkbox" value="Participant Data" id="participantData" name="Interest 1">
+										<label class="" for="participantData">
+											Participant Data
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="Partner Data" id="partnerData" name="Interest 2">
+										<label class="" for="partnerData">
+											Partner Data
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="STEM BP Resources" id="stemBPResources" name="Interest 3">
+										<label class="" for="stemBPResources">
+											STEM BP Resources
+										</label>
+									</div>
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="STEM BP Outcomes" id="stemBPOutcomes" name="Interest 4">
+										<label class="" for="stemBPOutcomes">
+											STEM BP Outcomes
+										</label>
+									</div>
+
+									<div class="one">
+
+										<input class="form-check-input" type="checkbox" value="Collaborative Infrastructure" id="collaborativeInfrastructure" name="Interest 5">
+										<label class="" for="collaborativeInfrastructure">
+											Collaborative Infrastructure
+										</label>
+									</div>
+
+
+								</fieldset>
+
+							</div>
+
+							<p class="small mt-3">Please select the button below to submit your request.  You will receive a response from a member of the Coordination Hub soon.</p>
+
+
+							<button type="submit" class="btn btn-info button-outlined mt-3 sendMessage" tabindex="0" aria-hidden="false">
+								<i class="fal fa-envelope brightBlue"></i>&nbsp;Submit
+								<div class="buttonOverlay"></div>
+							</button>
+
+
+						</form>
+
+						<div class="success_message2" style="display:flex;justify-content:center;display:none;overflow:none">
+							<h6 class="text-center">Your message was sent successfully!</h6>
+						</div>
+						<div class="error_message2" style="display:flex;justify-content: center;display:none;overflow:none">
+							<h5 class="text-center">Sorry there was an error sending your form.</h5>
+						</div>
+
+					</div>
+
+					<div class="row firstBlock hide1">
+						<div class="col-xs-12 col-lg-12">
+
+
+							<form role="form" type="post" id="theform">
+
+								<div class="form-group">
+									<label for="formControl1">Name</label>
+									<input id="formControl1" type="text" class="form-control required" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+								</div>
+								<div class="form-group">
+									<label for="formControl2">Email</label>
+									<input type="email" id="formControl2" class="form-control required" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+								</div>
+
+								<div class="form-group">
+									<label for="formControl3">Phone (optional)</label>
+									<input type="text" id="formControl3" class="form-control" tabindex="-1" aria-hidden="false" name="phone" data-form-field="Phone">
+								</div>
+
+
+								<div class="form-group">
+									<fieldset>
+										<label for="general-inquiry">Reason</label>
+										<div class="d-flex justify-content-around align-items-center flex-wrap mt-3">
+
+											<div class="form-check oneQuestion">
+												<i class="fal fa-info-circle"></i>
+												<input id="answer1" type="radio" name="reason" value="general" class="form-check-input" checked>
+												<label class="rainbow form-check-label" for="answer1"><p class="oneBlack">General</p></label>
+											</div>
+											<div class="form-check oneQuestion">
+												<i class="fal fa-question-circle"></i>
+												<input id="answer2" type="radio" name="reason" value="question" class="form-check-input">
+												<label class="rainbow form-check-label" for="answer2"><p class="oneBlack">Question</p></label>
+
+											</div>
+
+											<div class="form-check oneQuestion">
+												<i class="far fa-wrench"></i>
+												<input id="answer3" type="radio" name="reason" value="help" class="form-check-input">
+												<label class="rainbow form-check-label" for="answer3"><p class="oneBlack">Tech Help</p></label>
+											</div>
+
+
+										</div>
+
+									</fieldset>
+								</div>
+
+
+								<textarea name="message" tabindex="0" aria-hidden="false" rows="7" data-form-field="Message" class="textArea2"></textarea>
+
+								<button type="submit" class="btn btn-info button-outlined mt-3 sendMessage2" tabindex="0" aria-hidden="false">
+									<i class="fal fa-envelope brightBlue"></i>&nbsp;Submit
+									<div class="buttonOverlay"></div>
+								</button>
+
+							</form>
+
+							<div class="success_message" style="display:flex;justify-content:center;display:none;overflow:none">
+								<h6 class="text-center">Your message was sent successfully!</h6>
+							</div>
+							<div class="error_message" style="display:flex;justify-content: center;display:none;overflow:none">
+								<h5 class="text-center">Sorry there was an error sending your form.</h5>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="contactUsOverlay"></div>
+
+		<section class="block0">
+			<div class="topSection heros" id="overview">
+
+
+				<div class="container-fluid" id="themaincontent">
+
+					<a href="index.html"><img src="images/Includes-logo.png" class="img-fluid logo pl-4 pr-4 pt-3 mobileOnly" alt="NSF INCLUDES National Network Logo"></a>
+
+					<div class="d-flex justify-content-center align-items-center">
+						<img src="images/hands.svg" class="img-responsive" alt="">
+						<h2 class="text-center mb-0"><b>Characteristics of STEM BP Initiatives</b></h2>
+
+					</div>
+
+
+				</div>
+				<div class="container-fluid">
+
+					<div id="nav" class="largePadding">
+						<ul class="nav nav-tabs position-relative" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active text-center" data-type="projects" data-toggle="tab" href="#tabs-1" role="tab"><i class="fal fa-tasks-alt"></i><span class="hide767"><br>Projects</span></a>
+
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" data-type="students" data-toggle="tab" href="#tabs-2" role="tab"><i class="fal fa-users-class"></i><span class="hide767"><br>Students & Educators</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link  text-center"  data-type="partners" data-toggle="tab" href="#tabs-3" role="tab"><i class="fal fa-handshake"></i><span class="hide767"><br>Partners</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link  text-center" data-type="products" data-toggle="tab" href="#tabs-4" role="tab"><i class="fal fa-box-check"></i><span class="hide767"><br>STEM BP Resources</span></a>
+							</li>
+
+
+						</ul>
+
+					</div>
+
+					<div class="tab-content participation">
+						<div class="tab-pane active largePadding" id="tabs-1" role="tabpanel">
+
+							<p class="lighter mobileOnly text-center">Projects</p>
+
+							<p class="text-center pt-4">The following projects have contributed data to this site.</p>
+
+
+							<div class="row d-flex flex-wrap mt-5 mb-5 pl-3 pr-3">
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://www.aspirealliance.org/" target="_blank">
+
+										<div class="whiteBubble vertical">
+											<img src="images/aspire.svg" class="img-fluid" alt="Aspire Alliance Logo">
+
+											<p class="blueColor text-center">Aspire</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://cahsi.utep.edu/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/CAHSI.svg" class="img-fluid" alt="CAHSI Logo">
+
+											<p class="blueColor text-center">CAHSI</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://first2network.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/first.svg" class="img-fluid" alt="First2 Network Logo">
+
+											<p class="blueColor text-center">First2 Network</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://igenetwork.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/IGEN.svg" class="img-fluid p-2" alt="IGEN Logo">
+
+											<p class="blueColor text-center">IGEN</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+
+								<div class="col-lg-3  col-sm-12">
+									<a href="https://www.seasislandsalliance.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/SEAS.svg" class="img-fluid" alt="SEAS Island Alliance Logo">
+
+											<p class="blueColor text-center">SEAS Islands</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://www.stemcore.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/STEMCORE.svg" class="img-fluid" alt="STEMCORE Logo">
+
+											<p class="blueColor text-center">STEM Core</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://www.sponsorstem-ops.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/ops.svg" class="img-fluid" alt="STEM Ops Logo">
+
+											<p class="blueColor text-center">STEM Ops</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<a href="https://www.stempushnetwork.org/" target="_blank">
+										<div class="whiteBubble vertical">
+											<img src="images/push.svg" class="img-fluid last-logos" alt="STEM Push Logo">
+
+											<p class="blueColor text-center">STEM Push</p>
+											<p class="text-center blue">Program: NSF INCLUDES</p>
+											<p class="text-center blue">Agency: National Science Foundation</p>
+											<div class="absoluteBottom">
+												<p class="blue mb-0">Visit <i class="fal fa-external-link-alt"></i></p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab-pane" id="tabs-2" role="tabpanel">
+							<div class="largePadding">
+								<p class="lighter mobileOnly text-center">Students & Educators</p>
+								<h3 class="blue text-center pt-4">PreK-20 Students</h3>
+								<p>The eight Alliances that completed the Hub’s <span class="blue strong highlight" data-toggle="modal" data-target="#participant">Participant Worksheet <i class="far fa-window-restore"></i></span> <a href="#" data-toggle="popover" data-content="Direct refers to students directly engaged in the STEM BP strategies conducted by a given project (e.g., students who knowingly participated in a defined activity designed to enhance their career awareness about STEM)."><span class="blue strong">directly</span></a> reached a total of 1,925 PreK—20 students during the 2019-20 school year. Of this number, 358 (19%) were undergraduate students at 2-year Institutions of Higher Education (IHEs), 980 (51%) were undergraduate students at 4-year IHEs, 78 (4%) were graduate students, and 509 (26%) were classified as post-secondary students whose IHE level could not be distinguished.</p>
+								<p>In addition, Alliances <a href="#" data-toggle="popover" data-content="Indirect refers to those students indirectly engaged by a project (e.g., students who benefited from a defined BP STEM education reform program, event, or activity without being aware of their engagement in that program, event, or activity)."><span class="blue strong">indirectly</span></a> reached a total of 16,073 Pre-K—20 students during the 2019-20 school year. Of this number, 2,475 (15%) were elementary and secondary students and 13,598 (85%) were postsecondary students. <span class="blue strong highlight" data-toggle="modal" data-target="#prekData">View the data <i class="far fa-window-restore"></i></span> on the type of PreK—20 students reached indirectly.</p>
+
+
+
+								<div id="nav2">
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link  active text-center" data-toggle="tab" data-set="student" data-subset="gender" href="#gender" role="tab">Gender</a>
+
+										</li>
+										<li class="nav-item">
+											<a class="nav-link  text-center" data-toggle="tab" data-set="student" data-subset="race" href="#race" role="tab">Race</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link  text-center" data-toggle="tab" data-set="student" data-subset="ethnicity" href="#ethnicity" role="tab">Ethnicity</a>
+										</li>
+										<!-- 			<li class="nav-item">
+										<a class="nav-link  text-center" data-toggle="tab" data-set="student" data-subset="generation" href="#college" role="tab">First Generation College Status</a>
+									</li> -->
+
+
+								</ul>
+
+							</div>
+
+						</div>
+
+
+						<div class="tab-content">
+							<div class="tab-pane active" id="gender" role="tabpanel">
+								<div class="largePadding">
+									<div class="lightBlue">
+										<div class="d-flex align-items-center justify-content-start">
+											<i class="far fa-filter mr-3 ml-3"></i>
+
+											<form class="p-3">
+												<div class="form-check form-check-inline">
+													<label for="student-gender-studentType" class="form-check-label mr-3 ml-3">STUDENT TYPE</label>
+													<select aria-required="true" class="form-control form-check-input" id="student-gender-studentType" size="1">
+														<option value="all">All</option>
+														<option value="Elementary school students">Elementary school students</option>
+														<option value="Middle school students">Middle school students</option>
+														<option value="High school students">High school students</option>
+														<option value="Other PreK–12 students (cannot distinguish K-12 levels)">Other PreK–12 students (cannot distinguish K-12 levels)</option>
+														<option value="Undergraduate students at 2-year institutions of higher education (IHEs)">Undergraduate students at 2-year institutions of higher education (IHEs)</option>
+														<option value="Undergraduate students at 4-year IHEs">Undergraduate students at 4-year IHEs</option>
+														<option value="Graduate students at 4-year IHEs">Graduate students at 4-year IHEs</option>
+														<option value="Post-secondary students (cannot distinguish IHE levels)">Post-secondary students (cannot distinguish IHE levels)</option>
+														<option value="PreK-20 students (cannot distinguish K-20 levels)">PreK-20 students (cannot distinguish K-20 levels)</option>
+													</select>
+
+												</div>
+											</form>
+
+										</div>
+
+										<div class="absoEnd">
+
+											<div class="d-flex justify-content-center align-items-center filterItems">
+												<p class="mb-0">VIEW</p>
+												<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+												<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="d-flex flex-column">
+
+										<div class="graph">
+											<p class="text-center pt-5 student barchart-title">2019-2020 School Year</p>
+
+
+											<div id="student-gender-bar-chart" class="chart-container" chart-ratio=".4"></div>
+										</div>
+
+										<div class="table">
+
+											<p class="blue strong text-center pt-5">2019-2020 School Year</p>
+
+											<table id="student-gender-table" class="table top">
+
+												<thead>
+													<tr>
+														<th scope="col">Gender</th>
+														<th scope="col">Number</th>
+														<th scope="col">Percent</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+
+														<td>Female</td>
+														<td>1,417</td>
+														<td>15.7%</td>
+													</tr>
+													<tr>
+
+														<td>Male</td>
+														<td>1,536</td>
+														<td>17.8%</td>
+													</tr>
+													<tr>
+														<td>Non-binary and/or Gender Queer</td>
+														<td>1,508</td>
+														<td>16.6%</td>
+													</tr>
+
+													<tr>
+														<td>Other</td>
+														<td>1,464</td>
+														<td>16.4%</td>
+													</tr>
+
+													<tr>
+														<td>Not Provided by Respondent</td>
+														<td>1,401</td>
+														<td>15.5%</td>
+													</tr>
+
+													<tr>
+														<td>Not Collected by Project</td>
+														<td>1,546</td>
+														<td>17.9%</td>
+													</tr>
+
+
+												</tbody>
+											</table>
+
+
+										</div>
+
+										<!-- 		<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+										<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+										<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+										<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+									</div> -->
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+
+
+						<div class="tab-pane" id="race" role="tabpanel">
+							<div class="largePadding">
+								<div class="lightBlue">
+									<div class="d-flex align-items-center justify-content-start">
+										<i class="far fa-filter mr-3 ml-3"></i>
+
+										<form class="p-3">
+											<div class="form-check form-check-inline">
+												<label for="student-race-studentType" class="form-check-label mr-3 ml-3">STUDENT TYPE</label>
+												<select aria-required="true" class="form-control form-check-input" id="student-race-studentType" size="1">
+													<option value="all">All</option>
+													<option value="Elementary school students">Elementary school students</option>
+													<option value="Middle school students">Middle school students</option>
+													<option value="High school students">High school students</option>
+													<option value="Other PreK–12 students (cannot distinguish K-12 levels)">Other PreK–12 students (cannot distinguish K-12 levels)</option>
+													<option value="Undergraduate students at 2-year institutions of higher education (IHEs)">Undergraduate students at 2-year institutions of higher education (IHEs)</option>
+													<option value="Undergraduate students at 4-year IHEs">Undergraduate students at 4-year IHEs</option>
+													<option value="Graduate students at 4-year IHEs">Graduate students at 4-year IHEs</option>
+													<option value="Post-secondary students (cannot distinguish IHE levels)">Post-secondary students (cannot distinguish IHE levels)</option>
+													<option value="PreK-20 students (cannot distinguish K-20 levels)">PreK-20 students (cannot distinguish K-20 levels)</option>
+												</select>
+
+											</div>
+										</form>
+
+									</div>
+
+									<div class="absoEnd">
+
+										<div class="d-flex justify-content-center align-items-center filterItems">
+											<p class="mb-0">VIEW</p>
+											<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+											<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="d-flex flex-column">
+
+									<div class="graph">
+										<p class="text-center pt-5 student barchart-title">2019-2020 School Year</p>
+
+
+										<div id="student-race-bar-chart" class="chart-container" chart-ratio=".4"></div>
+
+									</div>
+
+									<div class="table">
+
+										<p class="blue strong text-center pt-5">2019-2020 School Year</p>
+
+										<table id="student-race-table" class="table top">
+
+											<thead>
+												<tr>
+													<th scope="col">Race</th>
+													<th scope="col">Number</th>
+													<th scope="col">Percent</th>
+
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>White</td>
+													<td>1,436</td>
+													<td>8.12%</td>
+												</tr>
+												<tr>
+													<td>Black or African American</td>
+													<td>1,428</td>
+													<td>8.07%</td>
+												</tr>
+												<tr>
+													<td>Middle Eastern or Northern African</td>
+													<td>1,447</td>
+													<td>8.18%</td>
+												</tr>
+
+												<tr>
+													<td>Asian or Asian American</td>
+													<td>1,523</td>
+													<td>8.61%</td>
+												</tr>
+
+												<tr>
+													<td>American Indian or Alaska Native</td>
+													<td>1,523</td>
+													<td>8.61%</td>
+												</tr>
+
+												<tr>
+													<td>Native Hawaiian or Other Pacific Islander</td>
+													<td>1,522</td>
+													<td>8.61%</td>
+												</tr>
+
+												<tr>
+													<td>Collected but not categorized by project</td>
+													<td>1,546</td>
+													<td>10.74%</td>
+												</tr>
+												<tr>
+													<td>Multi-racial</td>
+													<td>1,417</td>
+													<td>8.74%</td>
+												</tr>
+
+												<tr>
+													<td>Other</td>
+													<td>1,494</td>
+													<td>10.45%</td>
+												</tr>
+
+												<tr>
+													<td>Not provided by respondent</td>
+													<td>1,317</td>
+													<td>7.45%</td>
+												</tr>
+
+												<tr>
+													<td>Not collected by project</td>
+													<td>1,437</td>
+													<td>10.13%</td>
+												</tr>
+
+
+
+											</tbody>
+										</table>
+
+
+									</div>
+
+									<!-- 		<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+									<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+									<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+									<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+								</div> -->
+							</div>
+
+
+
+						</div>
+
+
+					</div>
+
+
+
+
+
+					<div class="tab-pane" id="ethnicity" role="tabpanel">
+						<div class="largePadding">
+							<div class="lightBlue">
+								<div class="d-flex align-items-center justify-content-start">
+									<i class="far fa-filter mr-3 ml-3"></i>
+
+									<form class="p-3">
+										<div class="form-check form-check-inline">
+											<label for="student-ethnicity-studentType" class="form-check-label mr-3 ml-3">STUDENT TYPE</label>
+											<select aria-required="true" class="form-control form-check-input" id="student-ethnicity-studentType" size="1">
+												<option value="all">All</option>
+												<option value="Elementary school students">Elementary school students</option>
+												<option value="Middle school students">Middle school students</option>
+												<option value="High school students">High school students</option>
+												<option value="Other PreK–12 students (cannot distinguish K-12 levels)">Other PreK–12 students (cannot distinguish K-12 levels)</option>
+												<option value="Undergraduate students at 2-year institutions of higher education (IHEs)">Undergraduate students at 2-year institutions of higher education (IHEs)</option>
+												<option value="Undergraduate students at 4-year IHEs">Undergraduate students at 4-year IHEs</option>
+												<option value="Graduate students at 4-year IHEs">Graduate students at 4-year IHEs</option>
+												<option value="Post-secondary students (cannot distinguish IHE levels)">Post-secondary students (cannot distinguish IHE levels)</option>
+												<option value="PreK-20 students (cannot distinguish K-20 levels)">PreK-20 students (cannot distinguish K-20 levels)</option>
+											</select>
+
+										</div>
+									</form>
+
+								</div>
+
+								<div class="absoEnd">
+
+									<div class="d-flex justify-content-center align-items-center filterItems">
+										<p class="mb-0">VIEW</p>
+										<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+										<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="d-flex flex-column">
+
+								<div class="graph">
+
+									<p class="text-center pt-5 student barchart-title">2019-2020 School Year</p>
+
+
+									<div id="student-ethnicity-bar-chart" class="chart-container" chart-ratio=".4"></div>
+
+
+								</div>
+
+								<div class="table">
+
+									<p class="white strong text-center pt-5">2019-2020 School Year</p>
+
+									<table id="student-ethnicity-table" class="table top">
+
+										<thead>
+											<tr>
+												<th scope="col">Ethnicity</th>
+												<th scope="col">Number</th>
+												<th scope="col">Percent</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Hispanic or Latino/a/x</td>
+												<td>1,384</td>
+												<td>22.7%</td>
+											</tr>
+											<tr>
+												<td>Not Hispanic or Latino/a/x</td>
+												<td>1,511</td>
+												<td>25.5%</td>
+											</tr>
+											<tr>
+												<td>Not provided by respondent</td>
+												<td>1,578</td>
+												<td>26.4%</td>
+											</tr>
+
+											<tr>
+												<td>Not collected by project</td>
+												<td>1,502</td>
+												<td>25.4%</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+
+								</div>
+
+								<!-- 		<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+								<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+								<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+								<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+							</div> -->
+						</div>
+
+
+
+					</div>
+
+
+				</div>
+
+
+				<div class="tab-pane" id="college" role="tabpanel">
+					<div class="largePadding">
+						<div class="lightBlue">
+							<div class="d-flex align-items-center justify-content-start">
+								<i class="far fa-filter mr-3 ml-3"></i>
+
+								<form class="p-3">
+									<div class="form-check form-check-inline">
+										<label for="student-generation-studentType" class="form-check-label mr-3 ml-3">STUDENT TYPE</label>
+										<select aria-required="true" class="form-control form-check-input" id="student-generation-studentType" size="1">
+											<option value="all">All</option>
+										</select>
+
+									</div>
+								</form>
+
+							</div>
+
+							<div class="absoEnd">
+
+								<div class="d-flex justify-content-center align-items-center filterItems">
+									<p class="mb-0">VIEW</p>
+									<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+									<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex flex-column">
+
+							<div class="graph">
+
+								<p class="text-center pt-5 student barchart-title">2019-2020 School Year</p>
+
+
+								<div id="student-generation-bar-chart" class="chart-container" chart-ratio=".4"></div>
+
+
+							</div>
+
+							<div class="table">
+
+								<p class="white strong text-center pt-5">2019-2020 School Year</p>
+
+								<table id="student-generation-table" class="table top">
+
+									<thead>
+										<tr>
+											<th scope="col">First Generation</th>
+											<th scope="col">Number</th>
+											<th scope="col">Percent</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>First-generation college student</td>
+											<td>704</td>
+											<td>27.6%</td>
+										</tr>
+										<tr>
+											<td>Not a first-generation college student</td>
+											<td>664</td>
+											<td>26.1%</td>
+										</tr>
+										<tr>
+											<td>Not provided by respondent</td>
+											<td>602</td>
+											<td>23.6%</td>
+										</tr>
+
+										<tr>
+											<td>Not collected by project</td>
+											<td>577</td>
+											<td>22.7%</td>
+										</tr>
+
+									</tbody>
+								</table>
+
+
+							</div>
+
+							<!-- 		<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+							<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+							<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+							<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+						</div> -->
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+
+
+			<section class="block500">
+				<div class="largePadding">
+					<div class="container heros overlay">
+						<h3 class="white text-center strong mb-5">Educators</h3>
+						<p class="white text-center">The eight Alliances that completed the Hub’s <span class="white strong highlight" data-toggle="modal" data-target="#participant2">Participant Worksheet <i class="far fa-window-restore"></i></span> <a href="#" data-toggle="popover" data-content="Direct refers to educators directly engaged in the STEM BP strategies conducted by a given project (e.g., educators who knowingly participated in a defined activity designed to enhance the equity and quality of their instruction, mentoring, or advising)."><span class="white strong"><em>directly</em></span></a> reached a total of 1,880 educators during the 2019-20 school year. Of this number, 41 (2%) were elementary and secondary teachers, 181 (10%) were faculty and administrators at 2-year IHEs, 1,554 (83%) were faculty and administrators at 4-year IHEs, and 104 (5%) were educators whose level could not be distinguished.</p>
+						<p class="white text-center">In addition, the Alliances reached a total of 267 non-PreK-20 professionals (67 <em>directly</em> and 200 <a href="#" data-toggle="popover" data-content="Indirect refers to those educators indirectly engaged by a project (e.g., educators who benefited from a defined BP STEM education reform program, event, or activity without being aware of their engagement in that program, event, or activity)."><span class="white strong"><em>indirectly</em></span></a>) during the 2019-20 school year.</p>
+					</div>
+
+					<div id="nav3" class="blueNav">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link  active text-center" data-toggle="tab" data-set="educator" data-subset="gender" href="#gender1" role="tab">Gender</a>
+
+							</li>
+							<li class="nav-item">
+								<a class="nav-link  text-center" data-toggle="tab" data-set="educator" data-subset="race" href="#race1" role="tab">Race</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link  text-center" data-toggle="tab" data-set="educator" data-subset="ethnicity" href="#ethnicity1" role="tab">Ethnicity</a>
+							</li>
+
+
+
+						</ul>
+
+					</div>
+
+				</div>
+
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="gender1" role="tabpanel">
+						<div class="largePadding">
+							<div class="darkBlue">
+								<div class="d-flex align-items-center justify-content-start">
+									<i class="far fa-filter mr-3 ml-3"></i>
+
+									<form class="p-3">
+										<div class="form-check form-check-inline">
+											<label for="educator-gender-educatorType" class="form-check-label mr-3 ml-3">EDUCATOR TYPE</label>
+											<select aria-required="true" class="form-control form-check-input" id="educator-gender-educatorType" size="1">
+												<option value="all">All</option>
+												<option value="PreK–12 teachers and administrators">PreK–12 teachers and administrators</option>
+												<option value="Faculty and administrators at 2-year IHEs">Faculty and administrators at 2-year IHEs</option>
+												<option value="Faculty, postdocs, graduate students, and administrators at 4-year IHEs">Faculty, postdocs, graduate students, and administrators at 4-year IHEs</option>
+												<option value="IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)">IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)</option>
+												<option value="PreK-20 educators (cannot distinguish educator levels)">PreK-20 educators (cannot distinguish educator levels)</option>
+											</select>
+										</div>
+									</form>
+
+								</div>
+
+								<div class="absoEnd">
+
+									<div class="d-flex justify-content-center align-items-center filterItems">
+										<p class="mb-0">VIEW</p>
+										<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+										<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="d-flex flex-column">
+
+
+								<div class="graph">
+
+									<p class="text-center white strong pt-5 educator barchart-title">2019-2020 School Year</p>
+
+
+									<div id="educator-gender-bar-chart" class="chart-container educators" chart-ratio=".4"></div>
+
+
+								</div>
+
+								<div class="table bottom">
+
+									<p class="white strong text-center pt-5">2019-2020 School Year</p>
+
+									<table id="educator-gender-table" class="table top">
+
+										<!-- <thead>
+										<tr>
+										<th scope="col">Gender</th>
+										<th scope="col">Number</th>
+										<th scope="col">Percent</th>
+
+									</tr>
+								</thead>
+								<tbody>
+								<tr>
+
+								<td>Female</td>
+								<td>1,417</td>
+								<td>15.7%</td>
+							</tr>
+							<tr>
+
+							<td>Male</td>
+							<td>1,536</td>
+							<td>17.8%</td>
+						</tr>
+						<tr>
+						<td>Non-binary and/or Gender Queer</td>
+						<td>1,508</td>
+						<td>16.6%</td>
+					</tr>
+
+					<tr>
+					<td>Other</td>
+					<td>1,464</td>
+					<td>16.4%</td>
+				</tr>
+
+				<tr>
+				<td>Not Provided by Respondent</td>
+				<td>1,401</td>
+				<td>15.5%</td>
+			</tr>
+
+			<tr>
+			<td>Not Collected by Project</td>
+			<td>1,546</td>
+			<td>17.9%</td>
+		</tr>
+
+
+	</tbody> -->
+</table>
+
+
+</div>
+
+
+
+<!-- 	<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+</div> -->
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="race1" role="tabpanel">
+	<div class="largePadding">
+		<div class="darkBlue">
+			<div class="d-flex align-items-center justify-content-start">
+				<i class="far fa-filter mr-3 ml-3"></i>
+
+				<form class="p-3">
+					<div class="form-check form-check-inline">
+						<label for="educator-race-educatorType" class="form-check-label mr-3 ml-3">EDUCATOR TYPE</label>
+						<select aria-required="true" class="form-control form-check-input" id="educator-race-educatorType" size="1">
+							<option value="all">All</option>
+							<option value="PreK–12 teachers and administrators">PreK–12 teachers and administrators</option>
+							<option value="Faculty and administrators at 2-year IHEs">Faculty and administrators at 2-year IHEs</option>
+							<option value="Faculty, postdocs, graduate students, and administrators at 4-year IHEs">Faculty, postdocs, graduate students, and administrators at 4-year IHEs</option>
+							<option value="IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)">IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)</option>
+							<option value="PreK-20 educators (cannot distinguish educator levels)">PreK-20 educators (cannot distinguish educator levels)</option>
+						</select>
+					</div>
+				</form>
+
+			</div>
+
+			<div class="absoEnd">
+
+				<div class="d-flex justify-content-center align-items-center filterItems">
+					<p class="mb-0">VIEW</p>
+					<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+					<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column">
+
+			<div class="graph">
+
+				<p class="text-center white strong pt-5 educator barchart-title">2019-2020 School Year</p>
+
+
+				<div id="educator-race-bar-chart" class="chart-container educators" chart-ratio=".4"></div>
+
+
+			</div>
+
+			<div class="table">
+
+				<p class="white strong text-center pt-5">2019-2020 School Year</p>
+
+				<table id="educator-race-table" class="table bottom">
+
+					<!-- <thead>
+					<tr>
+					<th scope="col">Ethnicity</th>
+					<th scope="col">Number</th>
+					<th scope="col">Percent</th>
+
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>Hispanic or Latino/a/x</td>
+			<td>1,384</td>
+			<td>22.7%</td>
+		</tr>
+		<tr>
+		<td>Not Hispanic or Latino/a/x</td>
+		<td>1,511</td>
+		<td>25.5%</td>
+	</tr>
+	<tr>
+	<td>Not provided by respondent</td>
+	<td>1,578</td>
+	<td>26.4%</td>
+</tr>
+
+<tr>
+<td>Not collected by project</td>
+<td>1,502</td>
+<td>25.4%</td>
+</tr>
+
+</tbody> -->
+</table>
+
+
+</div>
+
+<!-- 			<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+</div> -->
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="ethnicity1" role="tabpanel">
+	<div class="largePadding">
+		<div class="darkBlue">
+			<div class="d-flex align-items-center justify-content-start">
+				<i class="far fa-filter mr-3 ml-3"></i>
+
+				<form class="p-3">
+					<div class="form-check form-check-inline">
+						<label for="educator-ethnicity-educatorType" class="form-check-label mr-3 ml-3">EDUCATOR TYPE</label>
+						<select aria-required="true" class="form-control form-check-input" id="educator-ethnicity-educatorType" size="1">
+							<option value="all">All</option>
+							<option value="PreK–12 teachers and administrators">PreK–12 teachers and administrators</option>
+												<option value="Faculty and administrators at 2-year IHEs">Faculty and administrators at 2-year IHEs</option>
+												<option value="Faculty, postdocs, graduate students, and administrators at 4-year IHEs">Faculty, postdocs, graduate students, and administrators at 4-year IHEs</option>
+												<option value="IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)">IHE faculty (cannot distinguish between faculty and administrators at associate colleges, doctoral-granting institutions, masters colleges and universities, or baccalaureate colleges)</option>
+												<option value="PreK-20 educators (cannot distinguish educator levels)">PreK-20 educators (cannot distinguish educator levels)</option>
+						</select>
+					</div>
+				</form>
+
+			</div>
+
+			<div class="absoEnd">
+
+				<div class="d-flex justify-content-center align-items-center filterItems">
+					<p class="mb-0">VIEW</p>
+					<i class="fal fa-chart-bar ml-3 mr-3 activeFilter filterItem showChart" tabindex="0"></i>
+					<i class="far fa-table filterItem showTable" tabindex="0"></i>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column">
+
+			<div class="graph">
+
+				<p class="text-center white strong pt-5 educator barchart-title">2019-2020 School Year</p>
+
+
+				<div id="educator-ethnicity-bar-chart" class="chart-container educators" chart-ratio=".4"></div>
+
+
+			</div>
+
+			<div class="table">
+
+				<p class="white strong text-center pt-5">2019-2020 School Year</p>
+
+				<table id="educator-ethnicity-table" class="table bottom">
+
+					<!-- <thead>
+					<tr>
+					<th scope="col">Ethnicity</th>
+					<th scope="col">Number</th>
+					<th scope="col">Percent</th>
+
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>Hispanic or Latino/a/x</td>
+			<td>1,384</td>
+			<td>22.7%</td>
+		</tr>
+		<tr>
+		<td>Not Hispanic or Latino/a/x</td>
+		<td>1,511</td>
+		<td>25.5%</td>
+	</tr>
+	<tr>
+	<td>Not provided by respondent</td>
+	<td>1,578</td>
+	<td>26.4%</td>
+</tr>
+
+<tr>
+<td>Not collected by project</td>
+<td>1,502</td>
+<td>25.4%</td>
+</tr>
+
+</tbody> -->
+</table>
+
+
+</div>
+
+<!-- 			<div class="d-flex align-items-center justify-content-center three mt-5 mb-5">
+<button class="btn iguana"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button>
+<button class="btn iguana mr-3 ml-3"><p class="black mb-0 strong">Print <i class="fal fa-print strong"></i></p></button>
+<button class="btn iguana"><p class="black mb-0 strong">Share <i class="fal fa-share strong"></i></p></button>
+</div> -->
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="tab-pane" id="tabs-3" role="tabpanel">
+
+	<div class="heros container">
+		<p class="lighter mobileOnly text-center">Partners</p>
+
+
+
+		<p class="orangeNumber text-center mt-5">345 <span class="light small">Partners</span></p>
+		<p>The eight Alliances that completed the Hub’s <span class="blue strong highlight" data-toggle="modal" data-target="#partner">Partner Worksheet <i class="far fa-window-restore"></i></span> have engaged a total of 345 partners. Of this number, 213 (62%) were postsecondary institutions; 61 (18%) were community-based organizations, foundations, or other non-profit organizations; and 25 (7%) were IHE-affiliated centers or programs.</p>
+
+	</div>
+
+	<section class="block15 active">
+		<div class="container-fluid heros mb-5">
+
+			<div class="d-flex justify-content-around firstSet">
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="213">213</p>
+
+					<p class="blueColor larger text-center">Institution of<br>Higher Education (IHE)</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="61">61</p>
+
+					<p class="blueColor larger text-center">Community-Based<br>Organization, Foundation,<br>or Other Non-Profit</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="25">25</p>
+
+					<p class="blueColor larger text-center">IHE-Affiliated Center<br>or Program</p>
+
+				</div>
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="15">15</p>
+
+					<p class="blueColor larger text-center">Federal Agency<br>or Lab</p>
+
+				</div>
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="14">14</p>
+
+					<p class="blueColor larger text-center">Company</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="17">17</p>
+
+					<p class="blueColor larger text-center">Other</p>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-lg-12">
+				<div id="map-canvas"></div>
+
+				<div class="outer">
+
+					<div class="buttonGroup">
+
+
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							<!-- <label class="btn btn-secondary projectType" tabindex="0" aria-hidden="false" role="button">
+							<input type="radio" name="options" autocomplete="off">Project<br>Type
+						</label> -->
+						<label class="btn btn-secondary orgType active" tabindex="0" aria-hidden="false" role="button">
+							<input type="radio" name="options" autocomplete="off">Organization<br>Type
+						</label>
+
+						<label class="btn btn-secondary allianceType" tabindex="0" aria-hidden="false" role="button">
+							<input type="radio" name="options" autocomplete="off">Alliance
+						</label>
+
+					</div>
+
+
+				</div>
+
+				<div id="type">
+					<div class="group1">
+
+
+						<label class="btn btn-secondary" for="IHE" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="IHE" value="IHE">
+							<img src="images/Doctoral-circle.svg">
+							<p>IHE</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all200" value="" class="abso">
+								<label for="all200"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+
+						<label class="btn btn-secondary" for="non-SEA" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="non-SEA" value="non-SEA">
+							<img src="images/State-nonSEA-circle.svg">
+							<p>State or Local Agency (non-SEA/LEA)</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all300" value="" class="abso">
+								<label for="all300"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="Company" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="Company" value="Company">
+							<img src="images/local.svg">
+							<p>Company</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all400" value="" class="abso">
+								<label for="all400"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+
+						<label class="btn btn-secondary" for="HighSchool" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="HighSchool" value="HighSchool">
+							<img src="images/HS-circle.svg">
+							<p>PreK-12 School</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all500" value="" class="abso">
+								<label for="all500"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+						<label class="btn btn-secondary" for="Other" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="Other" value="Other">
+							<img src="images/Community-circle.svg">
+							<p>Community-Based Organization/Foundation/Other Non-Profit</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all600" value="" class="abso">
+								<label for="all600"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="IHE-Program" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="IHE-Program" value="IHE-Program">
+							<img src="images/IHEProgram-circle.svg">
+							<p>IHE-Affiliated Center or Program</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all700" value="" class="abso">
+								<label for="all700"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="federal" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="federal" value="Federal">
+							<img src="images/Federal-circle.svg">
+							<p>Federal Agency or Lab</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all800" value="" class="abso">
+								<label for="all800"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="museum" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="museum" value="Museum">
+							<img src="images/Museum-circle.svg">
+							<p>Museum or Science Center</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all900" value="" class="abso">
+								<label for="all900"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="stateLocal" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="organization" id="stateLocal" value="stateLocal">
+							<img src="images/education-circle.svg">
+							<p>State or Local Agency</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="organization" id="all901" value="" class="abso">
+								<label for="all901"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+					</div>
+
+					<div class="group2">
+
+
+						<label class="btn btn-secondary" for="Aspire" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="Aspire" value="Aspire">
+							<img src="images/Aspire-circle.svg">
+							<p>ASPIRE</p>
+
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all11" value="" class="abso">
+								<label for="all11"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+
+						<label class="btn btn-secondary" for="First2" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="First2" value="First2">
+							<img src="images/F2-circle.svg">
+							<p>FIRST2</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all12" value="" class="abso">
+								<label for="all12"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+						<label class="btn btn-secondary" for="IGEN" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="IGEN" value="IGEN">
+							<img src="images/IGEN-circle.svg">
+							<p>IGEN</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all13" value="" class="abso">
+								<label for="all13"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+						<label class="btn btn-secondary" for="STEMCORE" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="STEMCORE" value="STEMCORE">
+							<img src="images/STEMCORE-circle.svg">
+							<p>STEMCORE</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all14" value="" class="abso">
+								<label for="all14"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+						<label class="btn btn-secondary" for="STEMPUSH" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="STEMPUSH" value="STEMPUSH">
+							<img src="images/StemPush-Circle.svg">
+							<p>STEMPUSH</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all15" value="" class="abso">
+								<label for="all15"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="CAHSI" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="CAHSI" value="CAHSI">
+							<img src="images/CAHSI-circle.svg">
+							<p>CAHSI</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all16" value="" class="abso">
+								<label for="all16"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="SEAS" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="SEAS" value="SEAS">
+							<img src="images/Seas-circle.svg">
+							<p>SEAS</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all17" value="" class="abso">
+								<label for="all17"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+						<label class="btn btn-secondary" for="STEMOPS" tabindex="0" aria-hidden="false" role="button">
+							<input type="checkbox" name="alliance" id="STEMOPS" value="STEMOPS">
+							<img src="images/OPPS-circle.svg">
+							<p>STEMOPS</p>
+							<span class="showOnClick ml-3">
+
+								<input type="checkbox" name="alliance" id="all18" value="" class="abso">
+								<label for="all18"><i class="fal fa-times white"></i></label>
+							</span>
+
+						</label>
+
+
+
+
+
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="filterData pt-5 pb-5">
+
+				<div class="darkBlue pb-4 pt-3 container">
+
+
+
+
+
+					<div class="form-row topAttr">
+
+						<div class="col-sm-12 col-md-12 col-lg-3">
+
+
+							<p class="sortOrgName">ORGANIZATION NAME <i class="far fa-sort darkBlue"></i></p>
+							<!-- <select id="org" class="custom-select form-control">
+							<option selected="selected">All</option>
+
+
+						</select> -->
+
+					</div>
+
+					<div class="col-sm-12 col-md-12 col-lg-2">
+
+						<label for="alliance" class="sortAlliance">ALLIANCE <i class="far fa-sort darkBlue"></i></label>
+						<select id="alliance" class="custom-select form-control" data-default-value="All">
+							<option value="All" selected>All</option>
+							<option value="Aspire">Aspire</option>
+							<option value="CAHSI">CAHSI</option>
+							<option value="FIRST2">FIRST2</option>
+							<option value="IGEN">IGEN</option>
+							<option value="SEAS">SEAS</option>
+							<option value="STEM Core">STEM Core</option>
+							<option value="STEM OPS">STEM OPS</option>
+							<option value="STEM Push">STEM Push</option>
+
+
+
+						</select>
+
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-3">
+
+						<label for="orgType" class="sortOrgType">ORGANIZATION TYPE <i class="far fa-sort darkBlue"></i></label>
+						<select id="orgType" class="custom-select form-control" data-default-value="All">
+							<option value="All" selected>All</option>
+							<option value="Community-Based Organization/Foundation/Other Non-Profit">Community-Based Organization/Foundation/Other Non-Profit</option>
+							<option value="Federal Agency or Lab">Federal Agency or Lab</option>
+							<option value="IHE">Institution of Higher Education (IHE)</option>
+							<option value="IHE-Affiliated Center or Program">IHE-Affiliated Center or Program</option>
+							<option value="Company">Company</option>
+							<option value="PreK-12 School">PreK-12 School</option>
+							<option value="Museum or Science Center">Museum or Science Center</option>
+							<option value="State or Local Agency (non-SEA/LEA)">State or Local Agency (non-SEA/LEA)</option>
+							<option value="State or Local Education Agency">State or Local Education Agency</option>
+
+
+						</select>
+
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-2">
+
+						<p class="sortLevel">IHE LEVEL <i class="far fa-sort darkBlue"></i></p>
+						<!-- <select id="location" class="custom-select form-control">
+						<option selected="selected">All</option>
+
+					</select> -->
+
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-2">
+
+					<p class="sortClassification">IHE CARNEGIE<br>CLASSIFICATION <i class="far fa-sort darkBlue"></i></p>
+					<!-- <select id="zip" class="custom-select form-control orgZip">
+					<option selected="selected">All</option>
+
+
+				</select> -->
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+	<div class="container pt-5">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<div class="appendRows renderOrgs">
+
+				</div>
+
+
+			</div>
+		</div>
+		<p class="white small pt-2"><em>The naming and classification of partner organizations may contain some errors and/or internal inconstancies.  While STEM BP projects were responsible for providing organization name and type, we made some changes to maintain consistency across all participating STEM BP projects.  In some cases, we looked at organizations’ websites to ascertain their correct name and/or classification. In addition, we used the Carnegie Classification of Institutions of Higher Education website (<a class="white" href="https://carnegieclassifications.iu.edu/lookup/lookup.php" target="_blank">https://carnegieclassifications.iu.edu/lookup/lookup.php</a>) to categorize each IHE.</em></p>
+	</div>
+
+
+
+
+
+	<div class="content-spacer"></div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+<div class="tab-pane" id="tabs-4" role="tabpanel">
+
+	<div class="heros container">
+
+		<p class="lighter mobileOnly text-center">120 STEM BP Resources Developed</p>
+
+		<p class="orangeNumber text-center mt-5">120 <span class="light small">STEM BP Resources Developed</span></p>
+		<p>The eight Alliances that completed the Hub’s <span class="blue strong highlight" data-toggle="modal" data-target="#bp">STEM BP Resources Worksheet <i class="far fa-window-restore"></i></span> provided information about 120 STEM BP resources, including their project websites. The remaining 112 resources include: 30 conference presentations, 25 newspaper articles, 23 briefs, 19 journal articles, 12 webinars or videos, and 3 books. </p>
+
+
+	</div>
+
+	<section class="block20 active">
+		<div class="container-fluid heros mb-5">
+
+			<div class="d-flex justify-content-around">
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="30">30</p>
+
+					<p class="blueColor larger text-center">Conference/Workshop<br>Paper or Presentation</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="25">25</p>
+
+					<p class="blueColor larger text-center">Newspaper/Newsletter<br>Article or Blog</p>
+
+				</div>
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="23">23</p>
+
+					<p class="blueColor larger text-center">Brief<br>(resource, practice,<br>or research)</p>
+
+				</div>
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="19">19</p>
+
+					<p class="blueColor larger text-center">Journal Article</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="12">12</p>
+
+					<p class="blueColor larger text-center">Webinar or Video</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="8">8</p>
+
+					<p class="blueColor larger text-center">Project Website</p>
+
+				</div>
+
+				<div class="vertical">
+					<p class="blueNumber counter" data-target="3">3</p>
+
+					<p class="blueColor larger text-center">Book or Chapter</p>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="filterData pt-5 pb-5">
+
+					<div class="darkBlue pb-5 pt-3 container">
+
+
+						<div class="form-row topAttr">
+
+							<div class="col-sm-12 col-md-12 col-lg-3">
+
+
+								<p class="sortResourceName">RESOURCE NAME <i class="far fa-sort darkBlue"></i></p>
+								<!-- <select id="resourceName" class="custom-select form-control">
+								<option selected="selected">All</option>
+
+
+							</select> -->
+
+						</div>
+
+						<div class="col-sm-12 col-md-12 col-lg-2">
+
+							<label for="alliance2" class="sortResourceAlliance">ALLIANCE <i class="far fa-sort darkBlue"></i></label>
+							<select id="alliance2" class="custom-select form-control" data-default-value="All">
+									<option selected="selected">All</option>
+								<option value="Aspire">Aspire</option>
+								<option value="CAHSI">CAHSI</option>
+								<option value="First2Network">FIRST2</option>
+								<option value="IGEN">IGEN</option>
+								<option value="SEAS">SEAS</option>
+								<option value="STEM Core">STEM Core</option>
+								<option value="STEM OPS">STEM OPS</option>
+								<option value="STEM Push">STEM Push</option>
+
+
+
+
+							</select>
+
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-3">
+
+							<label for="resourceType" class="sortResourceType">RESOURCE TYPE <i class="far fa-sort darkBlue"></i></label>
+							<select id="resourceType" class="custom-select form-control" data-default-value="All">
+								<option selected="selected">All</option>
+								<option value="Brief (resource, practice, or research)">Brief (resource, practice, or research)</option>
+								<option value="Webinar/Video">Webinar/Video</option>
+								<option value="Newspaper/Newsletter Article or Blog">Newspaper/Newsletter Article or Blog</option>
+								<option value="Project Website">Project Website</option>
+								<option value="Journal Article">Journal Article</option>
+								<option value="Conference/Workshop Paper or Presentation">Conference/Workshop Paper or Presentation</option>
+								<option value="Book/Chapter">Book/Chapter</option>
+
+							</select>
+
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-1">
+
+							<p class="sortYear">YEAR <i class="far fa-sort darkBlue"></i></p>
+							<!-- <select id="year" class="custom-select form-control">
+							<option selected="selected">All</option>
+
+						</select> -->
+
+					</div>
+
+
+					<div class="col-sm-12 col-md-12 col-lg-2">
+
+						<p class="sortAuthors">AUTHORS <i class="far fa-sort darkBlue"></i></p>
+						<!-- <select id="authors" class="custom-select form-control">
+						<option selected="selected">All</option>
+
+
+					</select> -->
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-1">
+
+					<p style="margin-left:-15px">LINK</p>
+					<!-- <select id="authors" class="custom-select form-control">
+					<option selected="selected">All</option>
+
+
+				</select> -->
+			</div>
+
+			</div>
+
+
+
+		</div>
+
+
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="appendRows renderResources">
+
+					</div>
+
+
+				</div>
+			</div>
+			<p class="white small pt-2"><em>The format for listing authors’ names reflects the information provided by the individual projects that contributed information about their STEM BP resources.</em></p>
+		</div>
+
+
+
+		<div class="content-spacer"></div>
+
+
+
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+<!-- </div> -->
+
+</section>
+
+<div class="back-to-top" tabindex="0">
+	<i aria-hidden="true" class="far fa-angle-up"></i>
+</div>
+
+
+
+
+
+<div class="modal fade hub" id="participant" tabindex="-1" role="dialog" aria-labelledby="Hub Participant Information" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="blueFont text-center bold mb-0">Participant Worksheet</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>The <span class="blue strong">Participant Worksheet</span> obtains information on the total number and characteristics of students reached by initiatives designed to broaden participation in STEM. Specifically, the worksheet gathers information on the (1) number of students reached in a given year; (2) gender identity, race, and ethnicity of those students; and (3) number of first-generation college students (i.e., postsecondary students for whom neither parent completed a bachelor’s degree or higher) reached. All of these data are collected in the aggregate, and no information about the characteristics of individual students are collected or displayed as part of this effort.</p>
+
+				<p>Several caveats regarding the use of the Participant Worksheet are worth noting:</p>
+				<ul>
+					<li>The Participant Worksheet does not collect information about the <em>types</em> or <em>frequency</em> of activities that students participated in. Thus, for example, data cannot be used to distinguish between those students who participated in a 1-hour classroom activity and those who attended a 5-day educational summer program.</li>
+					<li>The data collected through the worksheet represents a duplicated count of students—i.e., the number of times that students were reached (both within and across projects). Thus, for example, a student who participated in two separate activities in a given year would be counted twice.</li>
+					<li>The Participant Worksheet collects data on students reached directly and indirectly. <em>Direct</em> refers to students directly engaged in the STEM BP strategies conducted by a given project (e.g., students who knowingly participated in a defined activity designed to enhance their career awareness about STEM). <em>Indirect</em> refers to those students indirectly engaged by a project (e.g., students who benefited from a defined BP STEM education reform program, event, or activity without being aware of their engagement in that program, event, or activity).</li>
+					<li>For the purposes of the Participant Worksheet, school year is defined as September 1 to August 31. Projects may make changes to this timeline (e.g., including summer activities in the previous school year)—and these changes are documented in a caveats sheet and maintained throughout the duration of the collection.</li>
+				</ul>
+
+			</div>
+			<div class="modal-footer mb-4">
+				<button class="btn iguana pl-5 pr-5 downloadPDF"><p class="black mb-0 strong">Download Protocol <i class="fal fa-download strong"></i></p></button>
+				<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade hub" id="participant2" tabindex="-1" role="dialog" aria-labelledby="Hub Participant Information" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="blueFont text-center bold mb-0">Participant Worksheet</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>The <span class="blue strong">Participant Worksheet</span> obtains information on the total number and characteristics of educators reached by STEM BP initiatives. Specifically, the worksheet gathers information on (1) the number of educators reached in a given year; and (2) the gender identity, race, and ethnicity of those educators. All of these data are collected in the aggregate, and no information about the characteristics of individual educators are collected or displayed as part of this effort.</p>
+
+				<p>Several caveats regarding the use of the Participant Worksheet are worth noting:</p>
+				<ul>
+					<li>The Participant Worksheet does not collect information about the <em>types</em> or <em>frequency</em> of activities that educators participated in. Thus, for example, data cannot be used to distinguish between those educators who participated in a 1-hour webinar and those who attended a 5-day professional development activity.</li>
+					<li>The data collected through the worksheet represents a duplicated count of educators—i.e., the number of times that educators were reached (both within and across projects). Thus, for example, an educator who participated in two separate activities in a given year would be counted twice.</li>
+					<li>The Participant Worksheet collects data on educators reached directly and indirectly. <em>Direct</em> refers to educators directly engaged in the STEM BP strategies conducted by a given project (e.g., educators who knowingly participated in a defined activity designed to enhance the equity and quality of their instruction, mentoring, or advising). <em>Indirect</em> refers to those educators indirectly engaged by a project (e.g., educators who benefited from a defined BP STEM education reform program, event, or activity without being aware of their engagement in that program, event, or activity).</li>
+					<li>For the purposes of the Participant Worksheet, school year is defined as September 1 to August 31. Projects may make changes to this timeline (e.g., including summer activities in the previous school year)—and these changes are documented in a caveats sheet and maintained throughout the duration of the collection.</li>
+				</ul>
+
+			</div>
+			<div class="modal-footer mb-4">
+				<a href="images/participant.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Protocol <i class="fal fa-download strong"></i></p></button></a>
+				<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade hub" id="partner" tabindex="-1" role="dialog" aria-labelledby="Hub Partner Information" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="blueFont text-center bold mb-0">Partner Worksheet</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>The Partner Worksheet obtains information on organizations that are partnering with STEM BP initiatives—including organization name, organization type, and zip code. Data on partner characteristics represent a cumulative, unduplicated count (although partner organizations are counted multiple times if they are associated with more than one STEM BP initiative).</p>
+			</div>
+			<div class="modal-footer mb-4">
+				<a href="images/partners.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Protocol <i class="fal fa-download strong"></i></p></button></a>
+				<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade hub" id="bp" tabindex="-1" role="dialog" aria-labelledby="STEM BP Resources Worksheet" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="blueFont text-center bold mb-0">STEM BP Resources Worksheet</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>The STEM BP Resources Worksheet obtains information on resources developed by STEM BP initiatives—including the resource name, resource type, year published or developed, authors (if applicable), and link to the resource (if applicable). Data on the characteristics of STEM BP resources represent a cumulative, unduplicated count.</p>
+			</div>
+			<div class="modal-footer mb-4">
+				<a href="images/resource.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Protocol <i class="fal fa-download strong"></i></p></button></a>
+				<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade hub" id="prekData" tabindex="-1" role="dialog" aria-labelledby="PreK Data Information" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="blueFont text-center bold mb-0">Students indirectly reached by STEM BP programs during 2019-20 School year</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+
+				<table class="table top" style="display: table;">
+
+					<thead>
+						<tr>
+							<th scope="col">Student Type</th>
+							<th scope="col">Number</th>
+							<th scope="col">Percent</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-active">
+
+							<td>All Student Type, total</td>
+							<td>16,073</td>
+							<td>100.00%</td>
+						</tr>
+						<tr>
+
+							<td>Elementary school students</td>
+							<td>0</td>
+							<td>0.00%</td>
+						</tr>
+						<tr>
+							<td>Middle school students</td>
+							<td>77</td>
+							<td>0.50%</td>
+						</tr>
+
+						<tr>
+							<td>High school students</td>
+							<td>2,398</td>
+							<td>14.90%</td>
+						</tr>
+
+						<tr>
+							<td>Other PreK–12 students (cannot distinguish PreK–12 levels)</td>
+							<td>0</td>
+							<td>0.00%</td>
+						</tr>
+
+						<tr>
+							<td>Undergraduate students at 2-year institutions of higher education (IHEs)</td>
+							<td>678</td>
+							<td>4.20%</td>
+						</tr>
+
+						<tr>
+							<td>Undergraduate students at 4-year IHEs<sup>1</sup></td>
+							<td>12,176</td>
+							<td>75.80%</td>
+						</tr>
+
+						<tr>
+							<td>Graduate students<sup>2</sup> at 4-year IHEs</td>
+							<td>744</td>
+							<td>4.60%</td>
+						</tr>
+
+						<tr>
+							<td>Post-secondary students (cannot distinguish IHE levels)</td>
+							<td>0</td>
+							<td>0.00%</td>
+						</tr>
+
+						<tr>
+							<td>Pre-K–20 students (cannot distinguish PreK–20 levels)</td>
+							<td>0</td>
+							<td>0.00%</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+
+				<p class="small">Note: Indirect refers to those students indirectly engaged by a project (e.g., students who benefited from a defined broadening participation STEM education reform program, event, or activity without being aware of their engagement in that program, event, or activity).</p>
+
+
+			</div>
+			<div class="modal-footer mb-4">
+
+				<a href="images/students-indirectly.pdf" target="_blank"><button class="btn iguana pl-5 pr-5"><p class="black mb-0 strong">Download Data <i class="fal fa-download strong"></i></p></button></a>
+
+				<button class="btn iguana" data-dismiss="modal"><span class="blueFill">Done</span></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<footer>
+	<div class="footer-wrapper-top">
+
+		<img src="images/footer.svg" class="img-responsive">
+		<p class="white smaller">This material is based upon work supported by the National Foundation under grant HRD-1818635. Any opinions, findings, and conclusions or recommendations expressed in the material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+
+	</div>
+
+	<div class="footer-wrapper">
+
+	</div>
+</footer>
+
+
+
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+<script src="js/TweenMax.min.js"></script>
+
+
+<script src="js/charts.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGBgMl7eo2YMsoIQckljjlJJ5aFsTs0g4&libraries=places"></script>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="data2.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="form.js"></script>
+
+</body>
+</html>

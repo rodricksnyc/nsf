@@ -1,0 +1,433 @@
+Program_Type,Alliance,Record,Year,Service_Type,Service_Population,Count_Type,Student_Type,Gender,Count
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,Aspire,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,36
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,15
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,776
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,CAHSI,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,80
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,35
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,36
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,1
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,First2,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,78
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,86
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,102
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,3
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,2
+NSF INCLUDES,IGEN,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,1
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,5
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,3
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,1
+NSF INCLUDES,SEAS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Elementary school students,Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,High school students,Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Middle school students,Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,120
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,223
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM CORE,1,2019-2020,Direct ,Student,Unduplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,54
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,264
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,3
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,1
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM OPS,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Elementary school students,Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Graduate students at 4-year IHEs,Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,High school students,Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,PreK-20 students (cannot distinguish K-20 levels),Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Middle school students,Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Other PreK–12 students (cannot distinguish K-12 levels),Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Post-secondary students (cannot distinguish IHE levels),Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 2-year institutions of higher education (IHEs),Other,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Female,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Male,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Non binary,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not collected,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Not provided,0
+NSF INCLUDES,STEM PUSH,1,2019-2020,Direct ,Student,Duplicated,Undergraduate students at 4-year IHEs,Other,0
